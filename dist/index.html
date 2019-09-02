@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132117487-1"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-132117487-1');</script>
+    <title>Главная</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta content="true" name="HandheldFriendly">
+    <meta content="width" name="MobileOptimized">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+    <link ref="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link ref="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <style>@media(min-width:901px){#jcont.fixed{margin-bottom: 97px !important;}}</style>
+  </head>
+  <body>
+    <header class="inner" data-animation="fadeIn" data-animation-delay="500ms">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10"><a class="logo-link" href="index.html"><img class="logo" src="assets/img/logo.svg" alt="логотип"></a><a class="link" href="faq.html">Частые&nbsp;вопросы</a><a class="link" href="about-company.html">О&nbsp;нас</a><a class="link" href="reviews.html">Отзывы</a><a class="link" href="contacts.html">Контакты</a><span class="clear"></span></div>
+          <div class="col-md-2 phone"><a href="tel:88002003839">8 (800) 200-38-39</a>
+            <div class="free8800">
+              <nobr>бесплатно для звонков из&nbsp;России</nobr>
+            </div>
+          </div>
+        </div>
+        <div class="row mobile">
+          <div class="col-md-2"><img class="logo" src="assets/img/logo.svg" alt="логотип"></div>
+          <div class="col-md-8 links"><a class="link" href="faq.html">Частые вопросы</a><a class="link" href="about-company.html">О нас</a><a class="link" href="reviews.html">Отзывы</a><a class="link" href="contacts.html">Контакты</a></div>
+          <div class="col-md-2 phone"><a href="tel:88002003839">8 (800) 200-38-39</a>
+            <div class="free8800">
+              <nobr>бесплатно для звонков из&nbsp;России</nobr>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="hamburger">
+        <div class="hamburger__container">
+          <div class="hamburger__block hamburger__block--1"></div>
+          <div class="hamburger__block hamburger__block--2"></div>
+          <div class="hamburger__block hamburger__block--3"></div>
+        </div>
+      </div>
+    </header>
+    <section class="index-offer">
+      <div class="container">
+        <div class="row" data-animation="fadeIn">
+          <div class="col-md-12">
+            <h1>Заказывайте такси-трансфер в&nbsp;аэропорт Симферополя и&nbsp;города Крыма</h1>
+          </div>
+        </div>
+        <div class="search search--main" id="search-index" data-animation="fadeIn" data-animation-delay="600ms">
+          <div class="row">
+            <form class="col-md-10 offset-1 index-offer__form">
+              <div class="row">
+                <div class="col-md-4">
+                  <fieldset>
+                    <fieldset>
+                      <input class="input focus with-hidden" name="from" id="from" value="Симферополь" autocomplete="off">
+                      <label for="from">Откуда</label>
+                      <ul class="suggestion-menu">
+                        <li>Алупка</li>
+                        <li>Бахчисарай</li>
+                        <li>Верхняя Кутузовка</li>
+                        <li>Гаспра</li>
+                        <li>Евпатория</li>
+                      </ul>
+                    </fieldset>
+                  </fieldset>
+                </div>
+                <div class="col-md-4">
+                  <fieldset>
+                    <fieldset>
+                      <input class="input with-hidden" name="where" id="where" autocomplete="off">
+                      <label for="where">Куда</label>
+                      <ul class="suggestion-menu">
+                        <li>Алупка</li>
+                        <li>Бахчисарай</li>
+                        <li>Верхняя Кутузовка</li>
+                        <li>Гаспра</li>
+                        <li>Евпатория</li>
+                      </ul>
+                    </fieldset>
+                  </fieldset>
+                </div>
+                <div class="col-md-2">
+                  <fieldset>
+                    <input class="input" id="passengers" readonly autocomplete="off">
+                    <label for="passengers" id="label-for-passengers">Пассажиры</label>
+                    <div class="passengers-add">
+                      <div class="row">
+                        <div class="col-md-6 passengers-add__text">Взрослые</div>
+                        <div class="col-md-6 row passengers-add__actions">
+                          <div class="col-md-4">
+                            <button class="passengers-add__button" id="adult-minus" type="button">-</button>
+                          </div>
+                          <div class="col-md-4" id="adult-number">0</div>
+                          <div class="col-md-4">
+                            <button class="passengers-add__button" id="adult-plus" type="button">+</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6 passengers-add__text">Дети</div>
+                        <div class="col-md-6 row passengers-add__actions">
+                          <div class="col-md-4">
+                            <button class="passengers-add__button" id="children-minus" type="button">-</button>
+                          </div>
+                          <div class="col-md-4" id="children-number">0</div>
+                          <div class="col-md-4">
+                            <button class="passengers-add__button" id="children-plus" type="button">+</button>
+                          </div>
+                        </div>
+                      </div>
+                      <input id="adult-number-input" type="hidden" value="0">
+                      <input id="children-number-input" type="hidden" value="0">
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="col-md-2">
+                  <button>Найти</button>
+                </div>
+              </div>
+            </form>
+          </div><img class="main-img main-img--1" src="assets/img/main-illustration.svg" alt="главная иллюстрация"><img class="main-img main-img--2" src="assets/img/main-illustration1.svg" alt="главная иллюстрация"><img class="main-img main-img--3" src="assets/img/main-illustration2.svg" alt="главная иллюстрация">
+        </div>
+      </div>
+    </section>
+    <section class="destinations" data-animation="fadeIn">
+      <h2 class="h2-80">Цены на популярные направления</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="destinations__destination"><a href="#">Алупка — Бахчисарай</a><span class="price">1 500 руб.</span></div>
+          </div>
+          <div class="col-md-6">
+            <div class="destinations__destination"><a href="#">Бахчисарай — Белогорск</a><span class="price">1 190 руб.</span></div>
+          </div>
+          <div class="col-md-6">
+            <div class="destinations__destination"><a href="#">Верхняя Кутузовка — Гаспра</a><span class="price">890 руб.</span></div>
+          </div>
+          <div class="col-md-6">
+            <div class="destinations__destination"><a href="#">Джанкой — Евпатория</a><span class="price">1 590 руб.</span></div>
+          </div>
+          <div class="col-md-6">
+            <div class="destinations__destination"><a href="#">Заозерное — Гурзуф</a><span class="price">990 руб.</span></div>
+          </div>
+          <div class="col-md-6">
+            <div class="destinations__destination"><a href="#">Верхняя Кутузовка — Симферополь</a><span class="price">2 090 руб.</span></div>
+          </div>
+          <div class="col-md-6">
+            <div class="destinations__destination"><a href="#">Джанкой — Гурзуф</a><span class="price">1 190 руб.</span></div>
+          </div>
+          <div class="col-md-6">
+            <div class="destinations__destination"><a href="#">Белогорск — Евпатория</a><span class="price">590 руб.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <h2>Отзывы</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="swiper-reviews swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" itemscope itemtype="http://schema.org/Review"><img class="reviews__triangle" src="assets/img/reviews-triangle.svg" alt="">
+                  <div class="reviews__stars">
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="reviews__itemreviewed" itemprop="itemreviewed">Вежливые люди</div>
+                  <div class="reviews__rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                    <meta itemprop="worstRating" content="0">
+                    <p>Оценка:<span itemprop="ratingValue">5</span>из<span itemprop="bestRating">5</span></p>
+                  </div>
+                  <div itemprop="reviewBody">
+                    <p>
+                      В&nbsp;наше время, отношение таксистов к&nbsp;мамам с&nbsp;детьми
+                      какое-то предвзятое. Никогда не&nbsp;получалось уехать на&nbsp;такси
+                      с&nbsp;первого раза, таксисты отказывались везти с&nbsp;ребенком без&nbsp;кресла,
+                      хотя оператор был предупрежден о&nbsp;необходимости наличия кресла.
+                    </p>
+                  </div>
+                  <!--a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте-->
+                  <div class="author"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Любовь Шишкина</span></span></div>
+                </div>
+                <div class="swiper-slide" itemscope itemtype="http://schema.org/Review"><img class="reviews__triangle" src="assets/img/reviews-triangle.svg" alt="">
+                  <div class="reviews__stars">
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="reviews__itemreviewed" itemprop="itemreviewed">Вежливые люди</div>
+                  <div class="reviews__rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                    <meta itemprop="worstRating" content="0">
+                    <p>Оценка:<span itemprop="ratingValue">4</span>из<span itemprop="bestRating">5</span></p>
+                  </div>
+                  <div itemprop="reviewBody">
+                    <p>
+                      Часто пользуюсь услугами этой службы такси. Данное такси никогда не&nbsp;подводит,
+                      приезжает точно в&nbsp;срок. У&nbsp;водителя всегда есть сдача, какую купюру я бы
+                      не&nbsp;дала.
+                    </p>
+                  </div>
+                  <!--a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте-->
+                  <div class="author"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Анна Михайлова</span></span></div>
+                </div>
+                <div class="swiper-slide" itemscope itemtype="http://schema.org/Review"><img class="reviews__triangle" src="assets/img/reviews-triangle.svg" alt="">
+                  <div class="reviews__stars">
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="reviews__itemreviewed" itemprop="itemreviewed">Вежливые люди</div>
+                  <div class="reviews__rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                    <meta itemprop="worstRating" content="0">
+                    <p>Оценка:<span itemprop="ratingValue">5</span>из<span itemprop="bestRating">5</span></p>
+                  </div>
+                  <div itemprop="reviewBody">
+                    <p>
+                      Машинку назначили быстро, сообщение о&nbsp;машине пришло буквально
+                      в&nbsp;течение 5&nbsp;минут. Водитель даже без&nbsp;просьбы помог
+                      с&nbsp;чемоданом. Вёз аккуратно, вёл себя очень вежливо.
+                    </p>
+                  </div>
+                  <!--a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте-->
+                  <div class="author"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Евгения Житникова</span></span></div>
+                </div>
+                <div class="swiper-slide" itemscope itemtype="http://schema.org/Review"><img class="reviews__triangle" src="assets/img/reviews-triangle.svg" alt="">
+                  <div class="reviews__stars">
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="reviews__itemreviewed" itemprop="itemreviewed">Вежливые люди</div>
+                  <div class="reviews__rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                    <meta itemprop="worstRating" content="0">
+                    <p>Оценка:<span itemprop="ratingValue">5</span>из<span itemprop="bestRating">5</span></p>
+                  </div>
+                  <div itemprop="reviewBody">
+                    <p>
+                      Заказывал через приложение, машина приехала через 10&nbsp;минут.
+                      Водитель помог убрать багаж. Сам по&nbsp;себе человек приятный.
+                      Машина — иномарка, чистая и&nbsp;ухоженная. В&nbsp;общем, остались
+                      только приятные впечатления.
+                    </p>
+                  </div>
+                  <!--a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте-->
+                  <div class="author"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Марк Залогин</span></span></div>
+                </div>
+                <div class="swiper-slide" itemscope itemtype="http://schema.org/Review"><img class="reviews__triangle" src="assets/img/reviews-triangle.svg" alt="">
+                  <div class="reviews__stars">
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="reviews__itemreviewed" itemprop="itemreviewed">Вежливые люди</div>
+                  <div class="reviews__rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                    <meta itemprop="worstRating" content="0">
+                    <p>Оценка:<span itemprop="ratingValue">3</span>из<span itemprop="bestRating">5</span></p>
+                  </div>
+                  <div itemprop="reviewBody">
+                    <p>
+                      Этим летом ездили (я, сестра и&nbsp;ее&nbsp;дочка) отдыхать в&nbsp;Коктебель.
+                      В&nbsp;Коктебеле мы были 5 дней отпуска, остальные 5 дней решили провести
+                      в&nbsp;Феодосии. Встал вопрос как&nbsp;туда добраться.
+                    </p>
+                  </div>
+                  <!--a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте-->
+                  <div class="author"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Пётр Селедков</span></span></div>
+                </div>
+                <div class="swiper-slide" itemscope itemtype="http://schema.org/Review"><img class="reviews__triangle" src="assets/img/reviews-triangle.svg" alt="">
+                  <div class="reviews__stars">
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="reviews__itemreviewed" itemprop="itemreviewed">Вежливые люди</div>
+                  <div class="reviews__rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                    <meta itemprop="worstRating" content="0">
+                    <p>Оценка:<span itemprop="ratingValue">4</span>из<span itemprop="bestRating">5</span></p>
+                  </div>
+                  <div itemprop="reviewBody">
+                    <p>
+                      Воспользовалась услугами этого милого такси в&nbsp;феврале,
+                      когда мы с&nbsp;мужем отдыхали в&nbsp;Ялте. Быстро и&nbsp;немудрено оформили
+                      туда и&nbsp;обратно трансфер. Водитель развлекал нас всю дорогу,
+                      так что советую.
+                    </p>
+                  </div>
+                  <!--a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте-->
+                  <div class="author"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Татьяна Иванова</span></span></div>
+                </div>
+                <div class="swiper-slide" itemscope itemtype="http://schema.org/Review"><img class="reviews__triangle" src="assets/img/reviews-triangle.svg" alt="">
+                  <div class="reviews__stars">
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="reviews__itemreviewed" itemprop="itemreviewed">Вежливые люди</div>
+                  <div class="reviews__rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                    <meta itemprop="worstRating" content="0">
+                    <p>Оценка:<span itemprop="ratingValue">4</span>из<span itemprop="bestRating">5</span></p>
+                  </div>
+                  <div itemprop="reviewBody">
+                    <p>
+                      Возвращалась из&nbsp;командировки. Очень устала и&nbsp;хотелось быстрее попасть домой.
+                      Пара служб предложила мне ждать, достаточно долго. Тогда я&nbsp;попробовала испытать
+                      судьбу и&nbsp;позвонила еще в&nbsp;службу Вежливые Люди.
+                    </p>
+                  </div>
+                  <!--a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте-->
+                  <div class="author"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Елена Никитина</span></span></div>
+                </div>
+                <div class="swiper-slide" itemscope itemtype="http://schema.org/Review"><img class="reviews__triangle" src="assets/img/reviews-triangle.svg" alt="">
+                  <div class="reviews__stars">
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="reviews__itemreviewed" itemprop="itemreviewed">Вежливые люди</div>
+                  <div class="reviews__rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                    <meta itemprop="worstRating" content="0">
+                    <p>Оценка:<span itemprop="ratingValue">4</span>из<span itemprop="bestRating">5</span></p>
+                  </div>
+                  <div itemprop="reviewBody">
+                    <p>
+                      Прилетал в&nbsp;Крым по&nbsp;работе, на&nbsp;прошлой неделе. Воспользовался
+                      поисковиком чтобы найти такси. Выбрал первый в&nbsp;списке.
+                      Попал на&nbsp;сайт данного оператора, посмотрел тарифы,
+                      там же оставил онлайн заявку. По&nbsp;прилету ждал водитель.
+                    </p>
+                  </div>
+                  <!--a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте-->
+                  <div class="author"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Мария Баранова</span></span></div>
+                </div>
+              </div>
+              <div class="swiper-pagination swiper-pagination--reviews"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <h2>Преимущества</h2>
+      <div class="container">
+        <div class="row row--advantages" data-animation="fadeIn">
+          <div class="col-md-4 row">
+            <div class="col-md-4 advantages__number"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="n-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 81.3 102.5" style="enable-background:new 0 0 81.3 102.5;" xml:space="preserve">
+<style type="text/css">
+	.st01{fill:none;stroke:#31CB87;stroke-miterlimit:10;}
+</style>
+<path id="_x31_" class="st01" d="M29.1,38.9l-11-17.3L44.7,2.3h15.1v98h-21V32.1L29.1,38.9z"/>
+</svg>
+
+            </div>
+            <div class="col-md-8">
+              <p>Гарантия подачи машины</p>
+            </div>
+          </div>
+          <div class="col-md-4 row">
+            <div class="col-md-4 advantages__number"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="n-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 81.3 102.5" style="enable-background:new 0 0 81.3 102.5;" xml:space="preserve">
+<style type="text/css">
+	.st01{fill:none;stroke:#31CB87;stroke-miterlimit:10;}
+</style>
+<path id="_x32_" class="st01" d="M72.6,100.8H9.4V84c0.1-0.1,2.4-2.3,6.9-6.6l7.7-7.7c1.7-1.9,3.9-4.2,6.7-7c3.2-3.4,5.4-6,6.7-8
+	l4.6-7.1c3.3-4.9,4.9-10,4.9-15.3c0-6.4-3-9.7-9-9.7c-2.7,0-4.9,0.9-6.4,2.6c-1.6,1.7-3,4.4-4.3,7.9l-17.5-8
+	c1.7-7.4,5.2-13.1,10.4-17.3c5.3-4.2,12.1-6.2,20.4-6.2c9.1,0,16.1,2.6,21.1,7.7c5.1,5.1,7.7,11.4,7.7,18.8
+	c0,18.6-10.9,36.3-32.8,53.1h36.1C72.6,81.2,72.6,100.8,72.6,100.8z"/>
+</svg>
+
+            </div>
+            <div class="col-md-8">
+              <p>Бесплатное ожидание даже в&nbsp;случае сильной задержки рейса</p>
+            </div>
+          </div>
+          <div class="col-md-4 row">
+            <div class="col-md-4 advantages__number"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="n-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 81.3 102.5" style="enable-background:new 0 0 81.3 102.5;" xml:space="preserve">
+<style type="text/css">
+	.st01{fill:none;stroke:#31CB87;stroke-miterlimit:10;}
+</style>
+<path id="_x33_" class="st01" d="M40.5,101.9c-7.5,0-14-1.5-19.6-4.4s-9.8-6.9-12.7-11.8l11.6-15.5C26.1,77.4,32.6,81,39.1,81
+	c3.9,0,7-0.9,9.1-2.7c2.1-1.8,3.2-4.1,3.2-6.9c0-7.2-5.6-10.8-16.7-10.8h-6.2v-21h5.6c4,0,7.3-0.9,9.7-2.6c2.5-1.7,3.7-4.1,3.7-7.2
+	c0-2.4-0.7-4.4-2.2-6c-1.5-1.5-3.7-2.3-6.7-2.3c-6.5,0-12.2,2.9-16.9,8.8l-11.4-15c6-9.8,16.1-14.7,30.4-14.7
+	c8.7,0,15.7,2.3,21.1,6.9C67.3,11.9,70,18,70,25.6c0,10.9-4.9,18.6-14.6,23V49c5.8,1.1,10.3,3.8,13.5,7.9c3.2,4.2,4.8,9.3,4.8,15.3
+	c0,9-3.2,16.2-9.5,21.7C58.1,99.3,50.1,101.9,40.5,101.9z"/>
+</svg>
+
+            </div>
+            <div class="col-md-8">
+              <p>Наличие детских удерживающих устройств</p>
+            </div>
+          </div>
+          <div class="col-md-4 row">
+            <div class="col-md-4 advantages__number"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="n-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 81.3 102.5" style="enable-background:new 0 0 81.3 102.5;" xml:space="preserve">
+<style type="text/css">
+	.st01{fill:none;stroke:#31CB87;stroke-miterlimit:10;}
+</style>
+<path id="_x34_" class="st01" d="M68,100.3H47v-21H2.5V63.6l35-61.3h24.1l-32.1,56H47v-21h21v21h11.5v21H68V100.3z"/>
+</svg>
+
+            </div>
+            <div class="col-md-8">
+              <p>Фиксированная цена во&nbsp;все дни, включая выходные и&nbsp;праздники</p>
+            </div>
+          </div>
+          <div class="col-md-4 row">
+            <div class="col-md-4 advantages__number"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="n-5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 81.3 102.5" style="enable-background:new 0 0 81.3 102.5;" xml:space="preserve">
+<style type="text/css">
+	.st01{fill:none;stroke:#31CB87;stroke-miterlimit:10;}
+</style>
+<path id="_x35_" class="st01" d="M16.1,56.3l6.7-54.9h48.4v21h-30l-2,12.5h3.4c8.8,0,16.1,2.9,21.8,8.7c5.9,5.7,8.8,13.4,8.8,23.2
+	c0,10.6-3.4,19-10.1,25.2c-6.8,6.1-15.4,9.1-25.6,9.1c-5.5,0-11-1.2-16.5-3.5c-5.5-2.4-9.7-5.6-12.5-9.7l11.8-16.1
+	c2,2.3,4.6,4.3,8,5.9s6.6,2.4,9.7,2.4c3.7,0,6.8-1.1,9.2-3.4s3.6-5.2,3.6-8.9c0-4.2-1.6-7.6-4.8-10.2c-3.2-2.6-7.6-3.8-13.2-3.8
+	C25.1,53.8,19.5,54.6,16.1,56.3z"/>
+</svg>
+
+            </div>
+            <div class="col-md-8">
+              <p>Все поездки по&nbsp;системе «от&nbsp;двери до&nbsp;дверей» без&nbsp;доплат</p>
+            </div>
+          </div>
+          <div class="col-md-4 row">
+            <div class="col-md-4 advantages__number"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="n-6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 81.3 102.5" style="enable-background:new 0 0 81.3 102.5;" xml:space="preserve">
+<style type="text/css">
+	.st01{fill:none;stroke:#31CB87;stroke-miterlimit:10;}
+</style>
+<path id="_x36_" class="st01" d="M6.4,65.5c0-8.4,1.5-16.5,4.5-24.2s7-14.3,11.9-19.8c10.3-11,21-18,32.3-21l8.5,15.8
+	c-7.5,2.5-14,6.2-19.7,11.1c-5.6,4.9-9.9,10.6-12.7,17c3.8-3.5,9.6-5.3,17.2-5.3c7.3,0,13.6,2.8,18.9,8.4c5.4,5.5,8.1,12.6,8.1,21.4
+	c0,10.3-3.3,18.3-9.9,24.2c-6.6,5.8-14.3,8.7-23.1,8.7c-10.7,0-19.5-3.5-26.2-10.5C9.7,84.4,6.4,75.7,6.4,65.5z M28.8,65.7
+	c0,4.8,1.2,8.5,3.6,11.2c2.4,2.7,5.8,4.1,10.2,4.1c3.3,0,5.8-1,7.7-2.9c1.9-2,2.8-4.4,2.8-7.4c0-3.5-1-6.4-3.1-8.5S45,59,41.2,59
+	C36.1,58.8,32,61.1,28.8,65.7z"/>
+</svg>
+
+            </div>
+            <div class="col-md-8">
+              <p>Выполняем до&nbsp;99% заказов даже в&nbsp;случае форс-мажора</p>
+            </div>
+          </div>
+          <div class="col-md-4 row">
+            <div class="col-md-4 advantages__number"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="n-7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 81.3 102.5" style="enable-background:new 0 0 81.3 102.5;" xml:space="preserve">
+<style type="text/css">
+	.st01{fill:none;stroke:#31CB87;stroke-miterlimit:10;}
+</style>
+<path id="_x37_" class="st01" d="M48.1,23.3H8.8v-21h64.4v14.3L40,100.3H17L48.1,23.3z"/>
+</svg>
+
+            </div>
+            <div class="col-md-8">
+              <p>Круглосуточная линия поддержки ответит на&nbsp;все Ваши вопросы</p>
+            </div>
+          </div>
+          <div class="col-md-4 row">
+            <div class="col-md-4 advantages__number"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="n-8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 81.3 102.5" style="enable-background:new 0 0 81.3 102.5;" xml:space="preserve">
+<style type="text/css">
+	.st01{fill:none;stroke:#31CB87;stroke-miterlimit:10;}
+</style>
+<path id="_x38_" class="st01" d="M41.1,101.9c-10.5,0-18.9-2.4-25.5-7.3s-10-11.5-10-19.7c0-6,1.4-11.1,4.1-15.4s6.3-7.4,10.9-9.4
+	v-0.4c-3.8-2.1-6.9-5.1-9.2-9.1C9.2,36.6,8,31.9,8,26.5c0-7.6,3.1-13.8,9.4-18.6C23.7,3,31.5,0.6,40.9,0.6S58.2,3,64.4,7.9
+	C70.8,12.8,74,19,74,26.5c0,4.9-1.3,9.4-3.8,13.6s-5.9,7.4-10.2,9.5V50c4.8,1.2,8.7,3.9,11.8,8c3.1,4.2,4.6,9.2,4.6,15
+	c0,9.1-3.3,16.1-9.8,21.3C59.9,99.4,51.4,101.9,41.1,101.9z M42,60.4h-1.7c-3.5,0-6.4,0.9-8.8,2.8C29.2,65,28,67.6,28,70.7
+	c0,3.2,1.1,5.7,3.2,7.5s5.4,2.7,9.7,2.7c4.4,0,7.7-0.8,9.9-2.5s3.2-4.2,3.1-7.7c-0.1-3.3-1.2-5.8-3.3-7.6
+	C48.6,61.3,45.7,60.4,42,60.4z M40.2,39.4H42c3,0,5.3-0.9,7-2.6c1.7-1.7,2.5-3.9,2.5-6.5c0-5.8-3.6-8.7-10.8-8.7
+	c-3.4,0-5.9,0.8-7.7,2.4s-2.7,3.7-2.7,6.3s0.9,4.8,2.6,6.5C34.7,38.5,37.1,39.4,40.2,39.4z"/>
+</svg>
+
+            </div>
+            <div class="col-md-8">
+              <p>Скидка 10% на&nbsp;обратную поездку</p>
+            </div>
+          </div>
+          <div class="col-md-4 row">
+            <div class="col-md-4 advantages__number"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="n-9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 81.3 102.5" style="enable-background:new 0 0 81.3 102.5;" xml:space="preserve">
+<style type="text/css">
+	.st01{fill:none;stroke:#31CB87;stroke-miterlimit:10;}
+</style>
+<path id="_x39_" class="st01" d="M75.9,38.4c0,18.3-4.9,33.1-14.6,44.4s-22,17.7-37,19.2l-6.9-16.7C35.2,81.5,46.3,72.8,51,59.4
+	c-3.8,3.5-8.9,5.3-15.3,5.3c-8,0-15-2.9-21-8.7C9,50.2,6.1,43,6.1,34.2c0-10.4,3.4-18.5,10.2-24.5C23.2,3.6,31,0.6,39.8,0.6
+	C50.6,0.6,59.4,4,66,10.9C72.6,17.9,75.9,27,75.9,38.4z M53.5,38.2c0-4.9-1.3-8.8-3.8-12c-2.5-3.1-5.9-4.7-10.1-4.7
+	c-3.3,0-5.9,1.1-8,3.3s-3.1,4.8-3.1,7.8c0,3.5,1.2,6.5,3.5,8.9s5.4,3.6,9.1,3.6C46.2,45.1,50.4,42.8,53.5,38.2z"/>
+</svg>
+
+            </div>
+            <div class="col-md-8">
+              <p>Чеки – БСО. Отчетная</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="standards">
+      <h2>Стандарты</h2>
+      <div class="container">
+        <div class="row">
+          <!--div.col-md-3#standards-menu-container
+          div#standards-menu
+              a.standards__nav.standards__nav--1(href="#")
+                  span Гарантинуем подачу машины
+              a.standards__nav.standards__nav--2(href="#")
+                  span Машина подается того класса, который заказывали
+              a.standards__nav.standards__nav--3(href="#")
+                  span Задерживается рейс?
+              a.standards__nav.standards__nav--4(href="#")
+                  span Все цены на&nbsp;сайте указаны за&nbsp;машину
+              a.standards__nav.standards__nav--5(href="#")
+                  span Машина подаётся заранее
+              a.standards__nav.standards__nav--6(href="#")
+                  span Если нужно, в&nbsp;авто будет детское кресло
+              a.standards__nav.standards__nav--7(href="#")
+                  span Можно получить мини-экскурсию
+              a.standards__nav.standards__nav--8(href="#")
+                  span Круглосуточная информационная поддержка
+          
+          -->
+          <div class="col-md-11"><span class="standards__h3 standards__h3--1">Гарантируем подачу машины</span>
+            <p>
+              Гарантируем подачу машины. Если вы сделали заказ за&nbsp;24 часа,
+              в&nbsp;любой ситуации мы гарантируем подачу машины! Даже в&nbsp;случае форс-мажора,
+              мы найдем замену в&nbsp;течении 10 минут. Как мы это делаем?
+              В&nbsp;экстренных ситуациях мы доплачиваем водителям, чтобы гарантированно
+              найти машину и&nbsp;выполнить наши обязательства. В&nbsp;нашей системе зарегистрировано
+              свыше 6000 исполнителей, а&nbsp;это значит, что&nbsp;мы не&nbsp;испытываем дефицита
+              в&nbsp;водителях и&nbsp;мы гарантированно выполним Ваш заказ.
+            </p><span class="standards__h3 standards__h3--2">Машина подается того класса, который заказывали</span>
+            <p>
+              Или класса выше. Вместительность известна заранее:
+              сколько человек может уехать, для&nbsp;скольких сумок
+              и&nbsp;чемоданов стандартных размеров есть место в&nbsp;багажнике. Заказывая
+              через какое-нибудь местное приложение такси от&nbsp;аэропорта,
+              это не&nbsp;всегда можно предсказать.
+            </p><span class="standards__h3 standards__h3--3">Задерживается рейс?</span>
+            <p>
+              Работник нашей компании гарантированно вас дождется,
+              и&nbsp;за&nbsp;это время Вам не&nbsp;придется доплачивать, что&nbsp;очень удобно
+              для&nbsp;каждого клиента. При переносе вылета, диспетчер произведет
+              замену автомобиля, поэтому Вы&nbsp;гарантированно не&nbsp;останетесь без&nbsp;транспорта.
+            </p><span class="standards__h3 standards__h3--4">Все цены на сайте указаны за машину</span>
+            <p>
+              У&nbsp;нас на&nbsp;сайте все&nbsp;цены фиксированы и&nbsp;указаны за&nbsp;машину.
+              Мы понимаем, что&nbsp;в&nbsp;Крыму распространена проблема подсадки
+              в&nbsp;автомобиль других людей, без&nbsp;ведома клиента, однако, мы&nbsp;не&nbsp;оказываем
+              таких услуг и&nbsp;при&nbsp;заказе у&nbsp;нас случайно такого не&nbsp;может произойти.
+            </p><span class="standards__h3 standards__h3--5">Машина подается заранее</span>
+            <p>
+              Перевозчик знает номер рейса, которым вы&nbsp;прилетаете в&nbsp;аэропорт
+              — такси уже ждет на&nbsp;стоянке, а&nbsp;водитель встречает вас так близко
+              к&nbsp;зоне прилета, насколько позволяют правила. То&nbsp;же&nbsp;самое — для
+              такси от&nbsp;вокзалов и&nbsp;из&nbsp;отелей: встречающий будет на&nbsp;месте,
+              по&nbsp;указанному адресу — таково правило сервиса. Можно вызвать
+              местное такси в&nbsp;аэропорт это будет дороже и&nbsp;придется ждать машину,
+              искать водителя, и&nbsp;времени уйдет на&nbsp;пол часа больше,
+              чем если Вы закажите у&nbsp;нас.
+            </p><span class="standards__h3 standards__h3--6">Если нужно, в&nbsp;авто будет детское кресло</span>
+            <p>
+              При заказе нашего такси достаточно выбрать, сколько вам нужно
+              детских кресел и&nbsp;для&nbsp;какого возраста. Водитель приедет на&nbsp;машине,
+              укомплектованной для&nbsp;перевозки детей. Если на&nbsp;месте пытаться заказать
+              такси в&nbsp;аэропорт и&nbsp;просить машину с&nbsp;одним-двумя детскими креслами,
+              приходится ждать не&nbsp;меньше 30 минут, пока оператор ищет варианты,
+              а&nbsp;может и&nbsp;не&nbsp;найти.
+            </p><span class="standards__h3 standards__h3--7">Можно получить мини-экскурсию</span>
+            <p>
+              Мы стараемся назначать на&nbsp;заказы местных водителей. Поэтому можно
+              расспросить о&nbsp;Крыме и&nbsp;городе куда Вы направляетесь.
+              Такси от&nbsp;Вежливых людей в&nbsp;Крыму, в&nbsp;первую очередь
+              туристическая услуга. Водители-профессионалы это понимают
+              и&nbsp;стараются сделать так, чтобы турист начал отдыхать еще во&nbsp;время поездки.
+            </p><span class="standards__h3 standards__h3--8">Круглосуточная информационная поддержка</span>
+            <p>
+              Наши менеджеры ответят Вам на&nbsp;все вопросы в&nbsp;любое время суток.
+              Мы&nbsp;ведем наших клиентов, пока не&nbsp;доставим их по&nbsp;адресу.
+              Вы гарантированно получите обратную связь по&nbsp;любому вопросу.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="how-to-order" id="how-to-order">
+      <h2>Как заказать</h2>
+      <div class="container">
+        <div class="row" data-animation="fadeIn">
+          <div class="col-md-10 offset-1">
+            <p class="how-to-order__p1">
+              Услуга трансфера от&nbsp;Вежливых людей - выгодная альтернатива вызова
+              такси в&nbsp;Крыму, в&nbsp;аэропорт или&nbsp;из&nbsp;аэропорта. Так же мы можем организовать
+              поездку между городами Крыма или&nbsp;туристическими местами, но&nbsp;обычно это поездки
+              от&nbsp;или&nbsp;до&nbsp;ж/д вокзала, авто вокзала, аэропорта или&nbsp;орского порта.
+            </p>
+          </div>
+        </div>
+        <div class="row" data-animation="fadeIn">
+          <div class="col-md-4 row">
+            <div class="col-md-4 advantages__number"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="h-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 81.3 102.5" style="enable-background:new 0 0 81.3 102.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#ffffff;stroke-miterlimit:10;}
+</style>
+<path id="_x31_" class="st0" d="M29.1,38.9l-11-17.3L44.7,2.3h15.1v98h-21V32.1L29.1,38.9z"/>
+</svg>
+
+            </div>
+            <div class="col-md-8">
+              <p>Укажите пункты назначения</p>
+            </div>
+          </div>
+          <div class="col-md-4 row">
+            <div class="col-md-4 advantages__number"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="h-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 81.3 102.5" style="enable-background:new 0 0 81.3 102.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#ffffff;stroke-miterlimit:10;}
+</style>
+<path id="_x32_" class="st0" d="M72.6,100.8H9.4V84c0.1-0.1,2.4-2.3,6.9-6.6l7.7-7.7c1.7-1.9,3.9-4.2,6.7-7c3.2-3.4,5.4-6,6.7-8
+	l4.6-7.1c3.3-4.9,4.9-10,4.9-15.3c0-6.4-3-9.7-9-9.7c-2.7,0-4.9,0.9-6.4,2.6c-1.6,1.7-3,4.4-4.3,7.9l-17.5-8
+	c1.7-7.4,5.2-13.1,10.4-17.3c5.3-4.2,12.1-6.2,20.4-6.2c9.1,0,16.1,2.6,21.1,7.7c5.1,5.1,7.7,11.4,7.7,18.8
+	c0,18.6-10.9,36.3-32.8,53.1h36.1C72.6,81.2,72.6,100.8,72.6,100.8z"/>
+</svg>
+
+            </div>
+            <div class="col-md-8">
+              <p>Подтвердите свой тариф</p>
+            </div>
+          </div>
+          <div class="col-md-4 row">
+            <div class="col-md-4 advantages__number"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="h-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 81.3 102.5" style="enable-background:new 0 0 81.3 102.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#ffffff;stroke-miterlimit:10;}
+</style>
+<path id="_x33_" class="st0" d="M40.5,101.9c-7.5,0-14-1.5-19.6-4.4s-9.8-6.9-12.7-11.8l11.6-15.5C26.1,77.4,32.6,81,39.1,81
+	c3.9,0,7-0.9,9.1-2.7c2.1-1.8,3.2-4.1,3.2-6.9c0-7.2-5.6-10.8-16.7-10.8h-6.2v-21h5.6c4,0,7.3-0.9,9.7-2.6c2.5-1.7,3.7-4.1,3.7-7.2
+	c0-2.4-0.7-4.4-2.2-6c-1.5-1.5-3.7-2.3-6.7-2.3c-6.5,0-12.2,2.9-16.9,8.8l-11.4-15c6-9.8,16.1-14.7,30.4-14.7
+	c8.7,0,15.7,2.3,21.1,6.9C67.3,11.9,70,18,70,25.6c0,10.9-4.9,18.6-14.6,23V49c5.8,1.1,10.3,3.8,13.5,7.9c3.2,4.2,4.8,9.3,4.8,15.3
+	c0,9-3.2,16.2-9.5,21.7C58.1,99.3,50.1,101.9,40.5,101.9z"/>
+</svg>
+
+            </div>
+            <div class="col-md-8">
+              <p>Заполните форму</p>
+            </div>
+          </div>
+          <div class="col-md-4 row">
+            <div class="col-md-4 advantages__number"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="h-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 81.3 102.5" style="enable-background:new 0 0 81.3 102.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#ffffff;stroke-miterlimit:10;}
+</style>
+<path id="_x34_" class="st0" d="M68,100.3H47v-21H2.5V63.6l35-61.3h24.1l-32.1,56H47v-21h21v21h11.5v21H68V100.3z"/>
+</svg>
+
+            </div>
+            <div class="col-md-8">
+              <p>Получите контакты водителя</p>
+            </div>
+          </div>
+          <div class="col-md-4 row">
+            <div class="col-md-4 advantages__number"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="h-5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 81.3 102.5" style="enable-background:new 0 0 81.3 102.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#ffffff;stroke-miterlimit:10;}
+</style>
+<path id="_x35_" class="st0" d="M16.1,56.3l6.7-54.9h48.4v21h-30l-2,12.5h3.4c8.8,0,16.1,2.9,21.8,8.7c5.9,5.7,8.8,13.4,8.8,23.2
+	c0,10.6-3.4,19-10.1,25.2c-6.8,6.1-15.4,9.1-25.6,9.1c-5.5,0-11-1.2-16.5-3.5c-5.5-2.4-9.7-5.6-12.5-9.7l11.8-16.1
+	c2,2.3,4.6,4.3,8,5.9s6.6,2.4,9.7,2.4c3.7,0,6.8-1.1,9.2-3.4s3.6-5.2,3.6-8.9c0-4.2-1.6-7.6-4.8-10.2c-3.2-2.6-7.6-3.8-13.2-3.8
+	C25.1,53.8,19.5,54.6,16.1,56.3z"/>
+</svg>
+
+            </div>
+            <div class="col-md-8">
+              <p>Свяжитесь с&nbsp;водителем по&nbsp;прилёту</p>
+            </div>
+          </div>
+          <div class="col-md-4 row">
+            <div class="col-md-4 advantages__number"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="h-6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 81.3 102.5" style="enable-background:new 0 0 81.3 102.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#ffffff;stroke-miterlimit:10;}
+</style>
+<path id="_x36_" class="st0" d="M6.4,65.5c0-8.4,1.5-16.5,4.5-24.2s7-14.3,11.9-19.8c10.3-11,21-18,32.3-21l8.5,15.8
+	c-7.5,2.5-14,6.2-19.7,11.1c-5.6,4.9-9.9,10.6-12.7,17c3.8-3.5,9.6-5.3,17.2-5.3c7.3,0,13.6,2.8,18.9,8.4c5.4,5.5,8.1,12.6,8.1,21.4
+	c0,10.3-3.3,18.3-9.9,24.2c-6.6,5.8-14.3,8.7-23.1,8.7c-10.7,0-19.5-3.5-26.2-10.5C9.7,84.4,6.4,75.7,6.4,65.5z M28.8,65.7
+	c0,4.8,1.2,8.5,3.6,11.2c2.4,2.7,5.8,4.1,10.2,4.1c3.3,0,5.8-1,7.7-2.9c1.9-2,2.8-4.4,2.8-7.4c0-3.5-1-6.4-3.1-8.5S45,59,41.2,59
+	C36.1,58.8,32,61.1,28.8,65.7z"/>
+</svg>
+
+            </div>
+            <div class="col-md-8">
+              <p>Водитель довезёт Вас с&nbsp;комфортом</p>
+            </div>
+          </div>
+        </div>
+        <div class="row" data-animation="fadeIn">
+          <div class="col-md-10 offset-1">
+            <p class="how-to-order__p2">
+              Заказать такси желательно заранее, за&nbsp;1-2 дня до&nbsp;вылета,
+              так&nbsp;как мы подбираем водителям поездки в&nbsp;обе стороны,
+              что&nbsp;позволяет гарантировать для&nbsp;Вас наименьшую цену
+              без&nbsp;потери качества.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cities">
+      <h2>Города</h2>
+      <div class="container" data-animation="fadeIn">
+        <div class="row">
+          <div class="col-md-2"><a href="#">Алупка</a></div>
+          <div class="col-md-2"><a href="#">Алушта</a></div>
+          <div class="col-md-2"><a href="#">Ангарский перевал</a></div>
+          <div class="col-md-2"><a href="#">Арабатская стрелка</a></div>
+          <div class="col-md-2"><a href="#">Армянск</a></div>
+          <div class="col-md-2"><a href="#">Балаклава</a></div>
+          <div class="col-md-2"><a href="#">Бахчисарай</a></div>
+          <div class="col-md-2"><a href="#">Белогорск</a></div>
+          <div class="col-md-2"><a href="#">Береговое</a></div>
+          <div class="col-md-2"><a href="#">Большой каньон</a></div>
+          <div class="col-md-2"><a href="#">Водопад Учан-СУ</a></div>
+          <div class="col-md-2"><a href="#">Гаспра</a></div>
+          <div class="col-md-2"><a href="#">Главная</a></div>
+          <div class="col-md-2"><a href="#">Горный Крым</a></div>
+          <div class="col-md-2"><a href="#">Джур-Джур водопад</a></div>
+          <div class="col-md-2"><a href="#">Димерджи гора</a></div>
+          <div class="col-md-2"><a href="#">Евпатория</a></div>
+          <div class="col-md-2"><a href="#">Западный Крым</a></div>
+          <div class="col-md-2"><a href="#">Казантип мыс</a></div>
+          <div class="col-md-2"><a href="#">Каламитский залив</a></div>
+          <div class="col-md-2"><a href="#">Каменные «грибы»</a></div>
+          <div class="col-md-2"><a href="#">Караби-Яйла</a></div>
+          <div class="col-md-2"><a href="#">Карадаг гора</a></div>
+          <div class="col-md-2"><a href="#">Кацивелли</a></div>
+          <div class="col-md-2"><a href="#">Керчь</a></div>
+          <div class="col-md-2"><a href="#">Коктебель</a></div>
+          <div class="col-md-2"><a href="#">Кореиз</a></div>
+          <div class="col-md-2"><a href="#">Красноперекопск</a></div>
+          <div class="col-md-2"><a href="#">Крымские пещеры</a></div>
+          <div class="col-md-2"><a href="#">Ливадия</a></div>
+          <div class="col-md-2"><a href="#">Массандра</a></div>
+          <div class="col-md-2"><a href="#">Мисхор</a></div>
+          <div class="col-md-2"><a href="#">Мойнакское озеро</a></div>
+          <div class="col-md-2"><a href="#">Новый Свет</a></div>
+          <div class="col-md-2"><a href="#">Ореанда</a></div>
+          <div class="col-md-2"><a href="#">Парковое</a></div>
+          <div class="col-md-2"><a href="#">Понизовка</a></div>
+          <div class="col-md-2"><a href="#">Поповка</a></div>
+          <div class="col-md-2"><a href="#">Саки</a></div>
+          <div class="col-md-2"><a href="#">Cимеиз</a></div>
+          <div class="col-md-2"><a href="#">Симферополь</a></div>
+          <div class="col-md-2"><a href="#">Старый Крым</a></div>
+          <div class="col-md-2"><a href="#">Судак</a></div>
+          <div class="col-md-2"><a href="#">Тарханкут</a></div>
+          <div class="col-md-2"><a href="#">Феодосия</a></div>
+          <div class="col-md-2"><a href="#">Черноморское</a></div>
+          <div class="col-md-2"><a href="#">Щелкино</a></div>
+          <div class="col-md-2"><a href="#">Ялта</a></div>
+        </div>
+      </div>
+    </section>
+    <section class="seo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-2">
+            <p>
+              Услуга трансфера — альтернатива заказу такси в&nbsp;аэропорт в&nbsp;чужой стране.
+              Возможен автомобильный трансфер между городами или&nbsp;туристическими местами,
+              но&nbsp;чаще всего это услуга поездки от&nbsp;или&nbsp;до&nbsp;транспортного узла: аэропорта,
+              железнодорожного или&nbsp;автовокзала, морского или&nbsp;речного порта.
+            </p>
+            <p>
+              Бронирование трансферов обязательно делается заранее: для&nbsp;разных классов авто
+              в&nbsp;разных странах минимальное время, за&nbsp;которое нужно заказать
+              трансфер — от&nbsp;16 до&nbsp;24 часов. Предварительный заказ дает перевозчику подготовиться
+              к&nbsp;поездке, это&nbsp;объясняет преимущества индивидуальных трансферов.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slider">
+      <div class="container">
+        <div class="slider__message">
+          Радость от&nbsp;сэкономленных
+          200&nbsp;рублей длится меньше,
+          чем&nbsp;горечь испорченных впечатлений, начните свое путешествие с&nbsp;позитива.
+          Начните свое путешествие
+          с&nbsp;нас!
+        </div>
+        <div class="slider__slider-container">
+          <div class="swiper-container swiper-index">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="assets/img/slide-1.png" alt="слайд 1"></div>
+              <div class="swiper-slide"><img src="assets/img/slide-2.png" alt="слайд 2"></div>
+              <div class="swiper-slide"><img src="assets/img/slide-3.png" alt="слайд 3"></div>
+            </div>
+            <div class="swiper-pagination swiper-pagination--index"></div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </section>
+    <footer class="footer-index" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 copyright">
+            <div>© 2018–2019 Служба заказа такси «Вежливые люди»</div>
+          </div>
+          <div class="col-md-2">
+            <div class="links"><a href="rules.html">Правила и&nbsp;условия</a></div>
+            <div class="links"><a href="faq.html">Частые вопросы</a></div>
+            <div class="links"><a href="contacts.html">Контакты</a></div>
+          </div>
+          <div class="col-md-4"><a class="social social--vk" href="#"></a><a class="social social--fb" href="#"></a><a class="social social--inst" href="#"></a><a class="social social--ok" href="#"></a><a class="phone" href="tel:88002003839">8 (800) 200-38-39</a>
+            <div class="free8800">
+              <nobr>бесплатно для звонков из&nbsp;России</nobr>
+            </div>
+          </div>
+          <div class="col-md-3 ketov">Дизайн — Юрий Кетов</div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+    <!-- BEGIN JIVOSITE CODE {literal}-->
+    <script>(function(){ var widget_id = 'mEb3UbRg1A';var d=document;var w=window;function l(){var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+    <!-- {/literal} END JIVOSITE CODE-->
+    <!-- Yandex.Metrika counter-->
+    <script>(function (m, e, t, r, i, k, a) {m[i] = m[i] || function () {(m[i].a = m[i].a || []).push(arguments)}; m[i].l=1 * new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(51847976, "init", {id:51847976, clickmap:true, trackLinks:true, accurateTrackBounce:true});</script>
+    <noscript>
+      <div><img src="https://mc.yandex.ru/watch/51847976" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter-->
+  </body>
+</html>

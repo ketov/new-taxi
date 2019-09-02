@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132117487-1"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-132117487-1');</script>
+    <title>Короткие маршруты</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta content="true" name="HandheldFriendly">
+    <meta content="width" name="MobileOptimized">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+    <link ref="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link ref="icon" href="assets/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header class="inner" data-animation="fadeIn" data-animation-delay="500ms">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10"><a class="logo-link" href="index.html"><img class="logo" src="assets/img/logo.svg" alt="логотип"></a><a class="link" href="faq.html">Частые&nbsp;вопросы</a><a class="link" href="about-company.html">О&nbsp;нас</a><a class="link" href="reviews.html">Отзывы</a><a class="link" href="contacts.html">Контакты</a><span class="clear"></span></div>
+          <div class="col-md-2 phone"><a href="tel:88002003839">8 (800) 200-38-39</a>
+            <div class="free8800">
+              <nobr>бесплатно для звонков из&nbsp;России</nobr>
+            </div>
+          </div>
+        </div>
+        <div class="row mobile">
+          <div class="col-md-2"><a class="logo-link" href="index.html"><img class="logo" src="assets/img/logo.svg" alt="логотип"></a></div>
+          <div class="col-md-8 links"><a class="link" href="faq.html">Частые вопросы</a><a class="link" href="about-company.html">О нас</a><a class="link" href="reviews.html">Отзывы</a><a class="link" href="contacts.html">Контакты</a></div>
+          <div class="col-md-2 phone"><a href="tel:88002003839">8 (800) 200-38-39</a>
+            <div class="free8800">
+              <nobr>бесплатно для звонков из&nbsp;России</nobr>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="hamburger">
+        <div class="hamburger__container">
+          <div class="hamburger__block hamburger__block--1"></div>
+          <div class="hamburger__block hamburger__block--2"></div>
+          <div class="hamburger__block hamburger__block--3"></div>
+        </div>
+      </div>
+    </header>
+    <section class="search search--inner search--short-destinations search--pattern">
+      <div class="container">
+        <ul class="search__breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+          <li class="route-item" itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement"><a href="#" itemprop="item"><span itemprop="name">Главная</span>
+              <meta itemprop="position" content="1"></a></li>
+          <li><span class="splash">/</span></li>
+          <li class="route-item" itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement"><a href="#" itemprop="item"><span itemprop="name">Такси из Симферополя</span>
+              <meta itemprop="position" content="2"></a></li>
+          <li><span class="splash">/</span></li>
+          <li class="route-item" itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement"><a href="#" itemprop="item"><span itemprop="name">Такси из Симферополя в Любимовку</span>
+              <meta itemprop="position" content="3"></a></li>
+          <li class="clear"></li>
+        </ul>
+      </div>
+      <h1>Заказать такси в&nbsp;Любимовку</h1>
+      <div class="container">
+        <div class="row">
+          <form class="col-md-10 offset-1">
+            <div class="row">
+              <div class="col-md-4">
+                <fieldset>
+                  <fieldset>
+                    <input class="input focus with-hidden" name="from" id="from" value="Симферополь" autocomplete="off">
+                    <label for="from">Откуда</label>
+                    <ul class="suggestion-menu">
+                      <li>Алупка</li>
+                      <li>Бахчисарай</li>
+                      <li>Верхняя Кутузовка</li>
+                      <li>Гаспра</li>
+                      <li>Евпатория</li>
+                    </ul>
+                  </fieldset>
+                </fieldset>
+              </div>
+              <div class="col-md-4">
+                <fieldset>
+                  <fieldset>
+                    <input class="input focus with-hidden" name="where" id="where" value="Любимовка" autocomplete="off">
+                    <label for="where">Куда</label>
+                    <ul class="suggestion-menu">
+                      <li>Алупка</li>
+                      <li>Бахчисарай</li>
+                      <li>Верхняя Кутузовка</li>
+                      <li>Гаспра</li>
+                      <li>Евпатория</li>
+                    </ul>
+                  </fieldset>
+                </fieldset>
+              </div>
+              <div class="col-md-2">
+                <fieldset>
+                  <input class="input" id="passengers" readonly autocomplete="off">
+                  <label for="passengers" id="label-for-passengers">Пассажиры</label>
+                  <div class="passengers-add">
+                    <div class="row">
+                      <div class="col-md-6 passengers-add__text">Взрослые</div>
+                      <div class="col-md-6 row passengers-add__actions">
+                        <div class="col-md-4">
+                          <button class="passengers-add__button" id="adult-minus" type="button">-</button>
+                        </div>
+                        <div class="col-md-4" id="adult-number">0</div>
+                        <div class="col-md-4">
+                          <button class="passengers-add__button" id="adult-plus" type="button">+</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 passengers-add__text">Дети</div>
+                      <div class="col-md-6 row passengers-add__actions">
+                        <div class="col-md-4">
+                          <button class="passengers-add__button" id="children-minus" type="button">-</button>
+                        </div>
+                        <div class="col-md-4" id="children-number">0</div>
+                        <div class="col-md-4">
+                          <button class="passengers-add__button" id="children-plus" type="button">+</button>
+                        </div>
+                      </div>
+                    </div>
+                    <input id="adult-number-input" type="hidden" value="0">
+                    <input id="children-number-input" type="hidden" value="0">
+                  </div>
+                </fieldset>
+              </div>
+              <div class="col-md-2">
+                <button>Найти</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="short-destinations__message">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 offset-1">
+            <p>Дорогие друзья!</p>
+            <p>
+              Наша служба такси является междугородней и,&nbsp;к&nbsp;сожалению,
+              мы не&nbsp;предоставляем поездки на&nbsp;средние и&nbsp;короткие дистанции.
+              Но&nbsp;мы заботливо подготовили для&nbsp;Вас контакты наших коллег,
+              которые осуществляют городские перевозки.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="destinations">
+      <h2 class="h2-80">Такси Симферополя</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="destinations__destination"><span class="price">Севтакси</span><a class="link" href="tel:+79785555555">+7 (978) 555-55-55</a></div>
+          </div>
+          <div class="col-md-6">
+            <div class="destinations__destination"><span class="price">МегаКрым</span><a class="link" href="tel:+79780701900">+7 (978) 070-19-00</a></div>
+          </div>
+          <div class="col-md-6">
+            <div class="destinations__destination"><span class="price">Ананас</span><a class="link" href="tel:+79787164137">+7 (978) 716-41-37</a></div>
+          </div>
+          <div class="col-md-6">
+            <div class="destinations__destination"><span class="price">Везёт</span><a class="link" href="tel:+79898500900">+7 (989) 850-09-00</a></div>
+          </div>
+          <div class="col-md-6">
+            <div class="destinations__destination"><span class="price">ВИП</span><a class="link" href="tel:+79788052576">+7 (978) 805-25-76</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="destinations">
+      <h2 class="h2-80">Популярные междугородние направления из&nbsp;Севастополя</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="destinations__destination"><a class="link" href="#">Севастополь — Симферополь</a><span class="price">1 490 руб.</span></div>
+          </div>
+          <div class="col-md-6">
+            <div class="destinations__destination"><a class="link" href="#">Севастополь — Ялта</a><span class="price">1 690 руб.</span></div>
+          </div>
+          <div class="col-md-6">
+            <div class="destinations__destination"><a class="link" href="#">Севастополь — Гаспра</a><span class="price">1 590 руб.</span></div>
+          </div>
+          <div class="col-md-6">
+            <div class="destinations__destination"><a class="link" href="#">Севастополь — Алушта</a><span class="price">1 990 руб.</span></div>
+          </div>
+          <div class="col-md-6">
+            <div class="destinations__destination"><a class="link" href="#">Севастополь — Любимовка</a><span class="price">990 руб.</span></div>
+          </div>
+        </div>
+        <div class="row"><a class="button" href="">Все направления</a></div>
+      </div>
+    </section>
+    <section class="reviews">
+      <h1>Отзывы</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="swiper-reviews swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" itemscope itemtype="http://schema.org/Review"><img class="reviews__triangle" src="assets/img/reviews-triangle.svg" alt="">
+                  <div class="reviews__stars">
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="reviews__itemreviewed" itemprop="itemreviewed">Вежливые люди</div>
+                  <div class="reviews__rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                    <meta itemprop="worstRating" content="0">
+                    <p>Оценка:<span itemprop="ratingValue">5</span>из<span itemprop="bestRating">5</span></p>
+                  </div>
+                  <div itemprop="reviewBody">
+                    <p>
+                      В&nbsp;наше время, отношение таксистов к&nbsp;мамам с&nbsp;детьми
+                      какое-то предвзятое. Никогда не&nbsp;получалось уехать на&nbsp;такси
+                      с&nbsp;первого раза, таксисты отказывались везти с&nbsp;ребенком без&nbsp;кресла,
+                      хотя оператор был предупрежден о&nbsp;необходимости наличия кресла.
+                    </p>
+                  </div>
+                  <!--a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте-->
+                  <div class="author"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Любовь Шишкина</span></span></div>
+                </div>
+                <div class="swiper-slide" itemscope itemtype="http://schema.org/Review"><img class="reviews__triangle" src="assets/img/reviews-triangle.svg" alt="">
+                  <div class="reviews__stars">
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="reviews__itemreviewed" itemprop="itemreviewed">Вежливые люди</div>
+                  <div class="reviews__rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                    <meta itemprop="worstRating" content="0">
+                    <p>Оценка:<span itemprop="ratingValue">4</span>из<span itemprop="bestRating">5</span></p>
+                  </div>
+                  <div itemprop="reviewBody">
+                    <p>
+                      Часто пользуюсь услугами этой службы такси. Данное такси никогда не&nbsp;подводит,
+                      приезжает точно в&nbsp;срок. У&nbsp;водителя всегда есть сдача, какую купюру я бы
+                      не&nbsp;дала.
+                    </p>
+                  </div>
+                  <!--a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте-->
+                  <div class="author"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Анна Михайлова</span></span></div>
+                </div>
+                <div class="swiper-slide" itemscope itemtype="http://schema.org/Review"><img class="reviews__triangle" src="assets/img/reviews-triangle.svg" alt="">
+                  <div class="reviews__stars">
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="reviews__itemreviewed" itemprop="itemreviewed">Вежливые люди</div>
+                  <div class="reviews__rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                    <meta itemprop="worstRating" content="0">
+                    <p>Оценка:<span itemprop="ratingValue">5</span>из<span itemprop="bestRating">5</span></p>
+                  </div>
+                  <div itemprop="reviewBody">
+                    <p>
+                      Машинку назначили быстро, сообщение о&nbsp;машине пришло буквально
+                      в&nbsp;течение 5&nbsp;минут. Водитель даже без&nbsp;просьбы помог
+                      с&nbsp;чемоданом. Вёз аккуратно, вёл себя очень вежливо.
+                    </p>
+                  </div>
+                  <!--a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте-->
+                  <div class="author"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Евгения Житникова</span></span></div>
+                </div>
+                <div class="swiper-slide" itemscope itemtype="http://schema.org/Review"><img class="reviews__triangle" src="assets/img/reviews-triangle.svg" alt="">
+                  <div class="reviews__stars">
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="reviews__itemreviewed" itemprop="itemreviewed">Вежливые люди</div>
+                  <div class="reviews__rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                    <meta itemprop="worstRating" content="0">
+                    <p>Оценка:<span itemprop="ratingValue">5</span>из<span itemprop="bestRating">5</span></p>
+                  </div>
+                  <div itemprop="reviewBody">
+                    <p>
+                      Заказывал через приложение, машина приехала через 10&nbsp;минут.
+                      Водитель помог убрать багаж. Сам по&nbsp;себе человек приятный.
+                      Машина — иномарка, чистая и&nbsp;ухоженная. В&nbsp;общем, остались
+                      только приятные впечатления.
+                    </p>
+                  </div>
+                  <!--a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте-->
+                  <div class="author"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Марк Залогин</span></span></div>
+                </div>
+                <div class="swiper-slide" itemscope itemtype="http://schema.org/Review"><img class="reviews__triangle" src="assets/img/reviews-triangle.svg" alt="">
+                  <div class="reviews__stars">
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="reviews__itemreviewed" itemprop="itemreviewed">Вежливые люди</div>
+                  <div class="reviews__rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                    <meta itemprop="worstRating" content="0">
+                    <p>Оценка:<span itemprop="ratingValue">3</span>из<span itemprop="bestRating">5</span></p>
+                  </div>
+                  <div itemprop="reviewBody">
+                    <p>
+                      Этим летом ездили (я, сестра и&nbsp;ее&nbsp;дочка) отдыхать в&nbsp;Коктебель.
+                      В&nbsp;Коктебеле мы были 5 дней отпуска, остальные 5 дней решили провести
+                      в&nbsp;Феодосии. Встал вопрос как&nbsp;туда добраться.
+                    </p>
+                  </div>
+                  <!--a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте-->
+                  <div class="author"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Пётр Селедков</span></span></div>
+                </div>
+                <div class="swiper-slide" itemscope itemtype="http://schema.org/Review"><img class="reviews__triangle" src="assets/img/reviews-triangle.svg" alt="">
+                  <div class="reviews__stars">
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="reviews__itemreviewed" itemprop="itemreviewed">Вежливые люди</div>
+                  <div class="reviews__rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                    <meta itemprop="worstRating" content="0">
+                    <p>Оценка:<span itemprop="ratingValue">4</span>из<span itemprop="bestRating">5</span></p>
+                  </div>
+                  <div itemprop="reviewBody">
+                    <p>
+                      Воспользовалась услугами этого милого такси в&nbsp;феврале,
+                      когда мы с&nbsp;мужем отдыхали в&nbsp;Ялте. Быстро и&nbsp;немудрено оформили
+                      туда и&nbsp;обратно трансфер. Водитель развлекал нас всю дорогу,
+                      так что советую.
+                    </p>
+                  </div>
+                  <!--a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте-->
+                  <div class="author"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Татьяна Иванова</span></span></div>
+                </div>
+                <div class="swiper-slide" itemscope itemtype="http://schema.org/Review"><img class="reviews__triangle" src="assets/img/reviews-triangle.svg" alt="">
+                  <div class="reviews__stars">
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="reviews__itemreviewed" itemprop="itemreviewed">Вежливые люди</div>
+                  <div class="reviews__rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                    <meta itemprop="worstRating" content="0">
+                    <p>Оценка:<span itemprop="ratingValue">4</span>из<span itemprop="bestRating">5</span></p>
+                  </div>
+                  <div itemprop="reviewBody">
+                    <p>
+                      Возвращалась из&nbsp;командировки. Очень устала и&nbsp;хотелось быстрее попасть домой.
+                      Пара служб предложила мне ждать, достаточно долго. Тогда я&nbsp;попробовала испытать
+                      судьбу и&nbsp;позвонила еще в&nbsp;службу Вежливые Люди.
+                    </p>
+                  </div>
+                  <!--a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте-->
+                  <div class="author"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Елена Никитина</span></span></div>
+                </div>
+                <div class="swiper-slide" itemscope itemtype="http://schema.org/Review"><img class="reviews__triangle" src="assets/img/reviews-triangle.svg" alt="">
+                  <div class="reviews__stars">
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star reviews__star--active"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="reviews__star"><img class="star star--gray" src="assets/img/star-gray.svg" alt="звезда рейтинга"><img class="star star--yellow" src="assets/img/star-yellow.svg" alt="звезда рейтинга"></div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="reviews__itemreviewed" itemprop="itemreviewed">Вежливые люди</div>
+                  <div class="reviews__rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                    <meta itemprop="worstRating" content="0">
+                    <p>Оценка:<span itemprop="ratingValue">4</span>из<span itemprop="bestRating">5</span></p>
+                  </div>
+                  <div itemprop="reviewBody">
+                    <p>
+                      Прилетал в&nbsp;Крым по&nbsp;работе, на&nbsp;прошлой неделе. Воспользовался
+                      поисковиком чтобы найти такси. Выбрал первый в&nbsp;списке.
+                      Попал на&nbsp;сайт данного оператора, посмотрел тарифы,
+                      там же оставил онлайн заявку. По&nbsp;прилету ждал водитель.
+                    </p>
+                  </div>
+                  <!--a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте-->
+                  <div class="author"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Мария Баранова</span></span></div>
+                </div>
+              </div>
+              <div class="swiper-pagination swiper-pagination--reviews"></div>
+            </div>
+          </div>
+          <!--div.col-md-3(data-animation="fadeIn" data-animation-delay="150ms" itemscope itemtype="http://schema.org/Review")
+          img.reviews__triangle(src="assets/img/reviews-triangle.svg" alt="")
+          div.reviews__stars
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.clear
+          
+          div.reviews__itemreviewed(itemprop="itemreviewed") Вежливые люди
+          
+          div.reviews__rating(itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating")
+              meta(itemprop="worstRating" content="0")
+              p Оценка:
+                  span(itemprop="ratingValue") 5
+                  | из
+                  span(itemprop="bestRating") 5
+          
+          div(itemprop="reviewBody")
+              p
+                  | В&nbsp;наше время, отношение таксистов к&nbsp;мамам с&nbsp;детьми
+                  | какое-то предвзятое. Никогда не&nbsp;получалось уехать на&nbsp;такси
+                  | с&nbsp;первого раза, таксисты отказывались везти с&nbsp;ребенком без&nbsp;кресла,
+                  | хотя оператор был предупрежден о&nbsp;необходимости наличия кресла
+                  span …
+          //a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте
+          div.author
+              span(itemprop="author" itemscope itemtype="http://schema.org/Person")
+                  span(itemprop="name") Любовь Шишкина
+          
+          -->
+          <!--div.col-md-3(data-animation="fadeIn" data-animation-delay="300ms" itemscope itemtype="http://schema.org/Review")
+          img.reviews__triangle(src="assets/img/reviews-triangle.svg" alt="")
+          div.reviews__stars
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.clear
+          
+          div.reviews__itemreviewed(itemprop="itemreviewed") Вежливые люди
+          
+          div.reviews__rating(itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating")
+              meta(itemprop="worstRating" content="0")
+              p Оценка:
+                  span(itemprop="ratingValue") 4
+                  | из
+                  span(itemprop="bestRating") 5
+          
+          
+          div(itemprop="reviewBody")
+              p
+                  | Часто пользуюсь услугами этой службы такси. Данное такси никогда не&nbsp;подводит,
+                  | приезжает точно в&nbsp;срок. У&nbsp;водителя всегда есть сдача, какую купюру я бы
+                  | не&nbsp;дала
+                  span …
+          //a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте
+          div.author 
+              span(itemprop="author" itemscope itemtype="http://schema.org/Person") 
+                  span(itemprop="name") Анна Михайлова
+          
+          -->
+          <!--div.col-md-3(data-animation="fadeIn" data-animation-delay="450ms" itemscope itemtype="http://schema.org/Review")
+          img.reviews__triangle(src="assets/img/reviews-triangle.svg" alt="")
+          div.reviews__stars
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.clear
+          
+          div.reviews__itemreviewed(itemprop="itemreviewed") Вежливые люди
+          
+          div.reviews__rating(itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating")
+              meta(itemprop="worstRating" content="0")
+              p Оценка:
+                  span(itemprop="ratingValue") 5
+                  | из
+                  span(itemprop="bestRating") 5
+          
+          div(itemprop="reviewBody")
+              p
+                  | Машинку назначили быстро, сообщение о&nbsp;машине пришло буквально
+                  | в&nbsp;течение 5&nbsp;минут. Водитель даже без&nbsp;просьбы помог
+                  | с&nbsp;чемоданом. Вёз аккуратно, вёл себя очень вежливо
+                  span …
+          //a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте
+          div.author 
+              span(itemprop="author" itemscope itemtype="http://schema.org/Person") 
+                  span(itemprop="name") Евгения Житникова
+          
+          -->
+          <!--div.col-md-3(data-animation="fadeIn" data-animation-delay="600ms" itemscope itemtype="http://schema.org/Review")
+          img.reviews__triangle(src="assets/img/reviews-triangle.svg" alt="")
+          div.reviews__stars
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.clear
+          
+          div.reviews__itemreviewed(itemprop="itemreviewed") Вежливые люди
+          
+          div.reviews__rating(itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating")
+              meta(itemprop="worstRating" content="0")
+              p Оценка:
+                  span(itemprop="ratingValue") 5
+                  | из
+                  span(itemprop="bestRating") 5
+          
+          div(itemprop="reviewBody")
+              p
+                  | Заказывал через приложение, машина приехала через 10&nbsp;минут.
+                  | Водитель помог убрать багаж. Сам по&nbsp;себе человек приятный.
+                  | Машина — иномарка, чистая и&nbsp;ухоженная. В&nbsp;общем, остались
+                  | только приятные впечатления
+                  span …
+          //a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте
+          div.author 
+              span(itemprop="author" itemscope itemtype="http://schema.org/Person") 
+                  span(itemprop="name") Марк Залогин
+          
+          
+          
+          -->
+          <!--div.col-md-3(data-animation="fadeIn" data-animation-delay="150ms" itemscope itemtype="http://schema.org/Review")
+          img.reviews__triangle(src="assets/img/reviews-triangle.svg" alt="")
+          div.reviews__stars
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.clear
+          
+          div.reviews__itemreviewed(itemprop="itemreviewed") Вежливые люди
+          
+          div.reviews__rating(itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating")
+              meta(itemprop="worstRating" content="0")
+              p Оценка:
+                  span(itemprop="ratingValue") 3
+                  | из
+                  span(itemprop="bestRating") 5
+          
+          div(itemprop="reviewBody")
+              p
+                  | Этим летом ездили (я, сестра и&nbsp;ее&nbsp;дочка) отдыхать в&nbsp;Коктебель. 
+                  | В&nbsp;Коктебеле мы были 5 дней отпуска, остальные 5 дней решили провести 
+                  | в&nbsp;Феодосии. Встал вопрос как&nbsp;туда добраться
+                  span …
+          //a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте
+          div.author 
+              span(itemprop="author" itemscope itemtype="http://schema.org/Person") 
+                  span(itemprop="name") Пётр Селедков
+          
+          -->
+          <!--div.col-md-3(data-animation="fadeIn" data-animation-delay="300ms" itemscope itemtype="http://schema.org/Review")
+          img.reviews__triangle(src="assets/img/reviews-triangle.svg" alt="")
+          div.reviews__stars
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.clear
+          
+          div.reviews__itemreviewed(itemprop="itemreviewed") Вежливые люди
+          
+          div.reviews__rating(itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating")
+              meta(itemprop="worstRating" content="0")
+              p Оценка:
+                  span(itemprop="ratingValue") 4
+                  | из
+                  span(itemprop="bestRating") 5
+          
+          div(itemprop="reviewBody")
+              p
+                  | Воспользовалась услугами этого милого такси в&nbsp;феврале, 
+                  | когда мы с&nbsp;мужем отдыхали в&nbsp;Ялте. Быстро и&nbsp;немудрено оформили 
+                  | туда и&nbsp;обратно трансфер. Водитель развлекал нас всю дорогу, 
+                  | так что советую
+                  span …
+          //a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте
+          div.author 
+              span(itemprop="author" itemscope itemtype="http://schema.org/Person") 
+                  span(itemprop="name") Татьяна Иванова
+          
+          -->
+          <!--div.col-md-3(data-animation="fadeIn" data-animation-delay="450ms" itemscope itemtype="http://schema.org/Review")
+          img.reviews__triangle(src="assets/img/reviews-triangle.svg" alt="")
+          div.reviews__stars
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.clear
+          
+          div.reviews__itemreviewed(itemprop="itemreviewed") Вежливые люди
+          
+          div.reviews__rating(itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating")
+              meta(itemprop="worstRating" content="0")
+              p Оценка:
+                  span(itemprop="ratingValue") 4
+                  | из
+                  span(itemprop="bestRating") 5
+          
+          div(itemprop="reviewBody")
+              p
+                  | Возвращалась из&nbsp;командировки. Очень устала и&nbsp;хотелось быстрее попасть домой. 
+                  | Пара служб предложила мне ждать, достаточно долго. Тогда я&nbsp;попробовала испытать 
+                  | судьбу и&nbsp;позвонила еще в&nbsp;службу Вежливые Люди. 
+                  span …
+          //a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте
+          div.author 
+              span(itemprop="author" itemscope itemtype="http://schema.org/Person") 
+                  span(itemprop="name") Елена Никитина
+          
+          -->
+          <!--div.col-md-3(data-animation="fadeIn" data-animation-delay="600ms" itemscope itemtype="http://schema.org/Review")
+          img.reviews__triangle(src="assets/img/reviews-triangle.svg" alt="")
+          div.reviews__stars
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star.reviews__star--active
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.reviews__star
+                  img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                  img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+              div.clear
+          
+          div.reviews__itemreviewed(itemprop="itemreviewed") Вежливые люди
+          
+          div.reviews__rating(itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating")
+              meta(itemprop="worstRating" content="0")
+              p Оценка:
+                  span(itemprop="ratingValue") 4
+                  | из
+                  span(itemprop="bestRating") 5
+          
+          div(itemprop="reviewBody")
+              p
+                  | Прилетал в&nbsp;Крым по&nbsp;работе, на&nbsp;прошлой неделе. Воспользовался 
+                  | поисковиком чтобы найти такси. Выбрал первый в&nbsp;списке. 
+                  | Попал на&nbsp;сайт данного оператора, посмотрел тарифы, 
+                  | там же оставил онлайн заявку. По&nbsp;прилету ждал водитель.
+                  span …
+          //a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте
+          div.author 
+              span(itemprop="author" itemscope itemtype="http://schema.org/Person") 
+                  span(itemprop="name") Мария Баранова
+          -->
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 copyright">
+            <div>© 2018–2019 Служба заказа такси «Вежливые люди»</div>
+          </div>
+          <div class="col-md-2">
+            <div class="links"><a href="rules.html">Правила и&nbsp;условия</a></div>
+            <div class="links"><a href="faq.html">Частые вопросы</a></div>
+            <div class="links"><a href="contacts.html">Контакты</a></div>
+          </div>
+          <div class="col-md-4"><a class="social social--vk" href="#"></a><a class="social social--fb" href="#"></a><a class="social social--inst" href="#"></a><a class="social social--ok" href="#"></a><a class="phone" href="tel:88002003839">8 (800) 200-38-39</a>
+            <div class="free8800">
+              <nobr>бесплатно для звонков из&nbsp;России</nobr>
+            </div>
+          </div>
+          <div class="col-md-3 ketov">Дизайн — Юрий Кетов</div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+    <!-- BEGIN JIVOSITE CODE {literal}-->
+    <script>(function(){ var widget_id = 'mEb3UbRg1A';var d=document;var w=window;function l(){var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+    <!-- {/literal} END JIVOSITE CODE-->
+    <!-- Yandex.Metrika counter-->
+    <script>(function (m, e, t, r, i, k, a) {m[i] = m[i] || function () {(m[i].a = m[i].a || []).push(arguments)}; m[i].l=1 * new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(51847976, "init", {id:51847976, clickmap:true, trackLinks:true, accurateTrackBounce:true});</script>
+    <noscript>
+      <div><img src="https://mc.yandex.ru/watch/51847976" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter-->
+  </body>
+</html>

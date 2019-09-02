@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132117487-1"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-132117487-1');</script>
+    <title>Заказ такси</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta content="true" name="HandheldFriendly">
+    <meta content="width" name="MobileOptimized">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+    <link ref="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link ref="icon" href="assets/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header class="inner" data-animation="fadeIn" data-animation-delay="500ms">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10"><a class="logo-link" href="index.html"><img class="logo" src="assets/img/logo.svg" alt="логотип"></a><a class="link" href="faq.html">Частые&nbsp;вопросы</a><a class="link" href="about-company.html">О&nbsp;нас</a><a class="link" href="reviews.html">Отзывы</a><a class="link" href="contacts.html">Контакты</a><span class="clear"></span></div>
+          <div class="col-md-2 phone"><a href="tel:88002003839">8 (800) 200-38-39</a>
+            <div class="free8800">
+              <nobr>бесплатно для звонков из&nbsp;России</nobr>
+            </div>
+          </div>
+        </div>
+        <div class="row mobile">
+          <div class="col-md-2"><a class="logo-link" href="index.html"><img class="logo" src="assets/img/logo.svg" alt="логотип"></a></div>
+          <div class="col-md-8 links"><a class="link" href="faq.html">Частые вопросы</a><a class="link" href="about-company.html">О нас</a><a class="link" href="reviews.html">Отзывы</a><a class="link" href="contacts.html">Контакты</a></div>
+          <div class="col-md-2 phone"><a href="tel:88002003839">8 (800) 200-38-39</a>
+            <div class="free8800">
+              <nobr>бесплатно для звонков из&nbsp;России</nobr>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="hamburger">
+        <div class="hamburger__container">
+          <div class="hamburger__block hamburger__block--1"></div>
+          <div class="hamburger__block hamburger__block--2"></div>
+          <div class="hamburger__block hamburger__block--3"></div>
+        </div>
+      </div>
+    </header>
+    <section class="search search--inner search--order">
+      <div class="container">
+        <ul class="search__breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+          <li class="route-item" itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement"><a href="#" itemprop="item"><span itemprop="name">Главная</span>
+              <meta itemprop="position" content="1"></a></li>
+          <li><span class="splash">/</span></li>
+          <li class="route-item" itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement"><a href="#" itemprop="item"><span itemprop="name">Такси из Ялты</span>
+              <meta itemprop="position" content="2"></a></li>
+          <li><span class="splash">/</span></li>
+          <li class="route-item" itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement"><a href="#" itemprop="item"><span itemprop="name">Такси из Ялты в аэропорт Симферополя</span>
+              <meta itemprop="position" content="3"></a></li>
+          <li class="clear"></li>
+        </ul>
+      </div>
+    </section>
+    <section class="order" ng-app="myApp">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-1 order__back"><a href="#">← Вернуться к выбору тарифа</a></div>
+        </div>
+      </div>
+      <h2>Заказ такси</h2>
+      <div class="container">
+        <div class="row">
+          <form class="col-md-6 offset-1">
+            <div class="row">
+              <div class="col-md-12">
+                <h3>Информация о&nbsp;трансфере</h3>
+                <fieldset>
+                  <input class="input error" id="from" name="from" ng-model="from">
+                  <div class="input-error">Это обязательное поле</div>
+                  <label for="from">
+                     Место отправления <span id="label-from-hide">(адрес или название отеля)</span></label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <fieldset>
+                  <input class="input error" id="date" name="date" ng-model="date">
+                  <div class="input-error">Это обязательное поле</div>
+                  <label for="date">Дата</label>
+                </fieldset>
+              </div>
+              <div class="col-md-6">
+                <fieldset>
+                  <input class="input" id="time" name="time" ng-model="time">
+                  <label for="time">Время</label>
+                </fieldset>
+                <div class="order-comment">Укажите точное время прилёта, как&nbspв&nbspбилете, если заказ из&nbsp;аэропорта</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <fieldset class="select">
+                  <div class="comment">Ваш часовой пояс</div><img class="tick" src="assets/img/select-triangle.svg" alt="">
+                  <select name="timezone">
+                    <option>Калининград (MSK-1)</option>
+                    <option selected>Москва (MSK)</option>
+                    <option>Самара (MSK+1)</option>
+                    <option>Екатеринбург (MSK+2)</option>
+                    <option>Омск (MSK+3)</option>
+                    <option>Красноярск (MSK+4)</option>
+                    <option>Иркутск (MSK+5)</option>
+                    <option>Якутск (MSK+6)</option>
+                    <option>Владивосток (MSK+7)</option>
+                    <option>Магадан (MSK+8)</option>
+                    <option>Камчатка (MSK+9)</option>
+                  </select>
+                </fieldset>
+                <div class="order-comment">Чтобы мы знали, во сколько вам можно звонить</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <fieldset class="select">
+                  <div class="comment">Взрослые пассажиры</div><img class="tick" src="assets/img/select-triangle.svg" alt="">
+                  <select class="passengers-select" name="adult-passengers">
+                    <option selected>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </fieldset>
+              </div>
+              <div class="col-md-6">
+                <fieldset class="select">
+                  <div class="comment">Дети</div><img class="tick" src="assets/img/select-triangle.svg" alt="">
+                  <select class="passengers-select" name="child-passengers">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </fieldset>
+              </div>
+            </div>
+            <div class="row k-radio">
+              <fieldset class="checkbox">
+                <label for="child-seats-and-boosters-block" data-block="#children-seat-row">Детские кресла и бустеры</label>
+                <input type="checkbox" id="child-seats-and-boosters-block">
+              </fieldset>
+            </div>
+            <div class="row" id="children-seat-row">
+              <div class="col-md-6">
+                <fieldset class="select">
+                  <div class="comment">Кресло</div><img class="tick" src="assets/img/select-triangle.svg" alt="">
+                  <select id="chair-select" name="chair" onchange="var n = this.value; $('#chair-result').text('Детское кресло × ' + n + ' — ' + 200*n + ' руб.'); $('#chair-result').attr('data-summ', 200*n); var r = (n*200+parseInt($('#booster-result').attr('data-summ'))+parseInt($('#order-summ').attr('data-start'))); $('#order-summ').text(Math.round(r/50)*50);">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </fieldset>
+                <div class="order-comment">+200 руб.</div>
+              </div>
+              <div class="col-md-6">
+                <fieldset class="select">
+                  <div class="comment">Бустеры</div><img class="tick" src="assets/img/select-triangle.svg" alt="">
+                  <select id="booster-select" name="chair" onchange="var n = this.value; $('#booster-result').text('Бустер × ' + n + ' — ' + 200*n + ' руб.'); $('#booster-result').attr('data-summ', 200*n); var r = (n*200+parseInt($('#chair-result').attr('data-summ'))+parseInt($('#order-summ').attr('data-start'))); $('#order-summ').text(Math.round(r/50)*50);">
+                    <option selected>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </fieldset>
+                <div class="order-comment">+200 руб.</div>
+              </div>
+            </div>
+            <div class="row k-radio k-radio--back">
+              <fieldset class="checkbox">
+                <label for="back" data-block="#back-row">Обратный трансфер</label>
+                <input type="checkbox" id="back">
+              </fieldset>
+            </div>
+            <div class="row" id="back-row">
+              <div class="col-md-6">
+                <fieldset>
+                  <input class="input" id="date-back" name="date-back" ng-model="dateBack">
+                  <label for="date-back">Дата</label>
+                </fieldset>
+              </div>
+              <div class="col-md-6">
+                <fieldset>
+                  <input class="input" id="time-back" name="time-back" ng-model="timeBack">
+                  <label for="time-back">Время</label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <h4>Контактные данные</h4>
+              </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <input class="input" id="name" name="name" ng-model="name">
+                  <label for="name">Имя и фамилия</label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <fieldset>
+                  <input class="input" id="email" name="email" ng-model="email">
+                  <label for="email">Эл. почта</label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <fieldset>
+                  <input class="input" id="phone" name="phone">
+                  <label for="phone">Номер телефона</label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 row" id="use-code">
+                <div class="col-md-6">
+                  <fieldset>
+                    <input class="input" id="promocode" name="promocode" onkeyup="">
+                    <label for="promocode">Промокод</label>
+                  </fieldset>
+                </div>
+                <div class="col-md-6">
+                  <button type="button">Применить промокод</button>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="order__additional-services-h4">Дополнительные товары и&nbsp;услуги</h4>
+              </div>
+              <div class="row k-radio">
+                <fieldset class="checkbox">
+                  <label for="meet">Встреча в аэропорту с табличкой (+200 руб.)</label>
+                  <input type="checkbox" id="meet" onchange="$('#meet-result').text('Встреча в аэропорту — 200 руб.'); if ($(this).is(':checked')){var r = (200+parseInt($('#chair-result').attr('data-summ'))+parseInt($('#order-summ').attr('data-start'))+parseInt($('#booster-result').attr('data-summ'))); $('#order-summ').text(Math.round(r/50)*50); $('#order-summ').attr('data-start', parseInt($('#order-summ').attr('data-start'))+200);} else{$('#meet-result').text(''); var r = (parseInt($('#order-summ').attr('data-start'))-200 + parseInt($('#booster-result').attr('data-summ')) + parseInt($('#chair-result').attr('data-summ'))); $('#order-summ').text(Math.round(r/50)*50); $('#order-summ').attr('data-start', parseInt($('#order-summ').attr('data-start'))-200);}">
+                </fieldset>
+              </div>
+            </div>
+            <div class="row last-row">
+              <div class="col-md-12">
+                <div class="order__continue row">
+                  <div class="col-md-6">
+                    <input class="show" id="i-agree" type="checkbox">
+                    <div class="i-agree-block">
+                      <label for="i-agree">Я согласен с условиями</label><a href="#">Политики конфиденциальности</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <button class="not-agree" id="order-continue">Продолжить</button>
+                    <div class="input-error" id="need-agree">Необходимо согласие с условиями политики конфиденциальности</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="col-md-4" id="order__result-container">
+            <div class="order__result" id="order__result">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="order__result-row">
+                    <div class="order__result-header">Тариф</div>
+                    <div class="order__result-text">«Эконом»</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="order__result-row">
+                    <div class="order__result-header">Пассажиры</div>
+                    <div class="order__result-text" id="passengers-result">1</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="order__result-row">
+                    <div class="order__result-header">Место отправления</div>
+                    <div class="order__result-text order__result-text--from">{{ from }} {{ date }} {{ time }}</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="order__result-row">
+                    <div class="order__result-header">Обратный трансфер</div>
+                    <div class="order__result-text order__result-text"><span class="order__result-date">{{dateBack}}</span><span>{{ timeBack}}</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="order__result-row">
+                    <div class="order__result-header">Контактная информация</div>
+                    <div class="order__result-text order__result-text--name">{{name}}</div>
+                    <div class="order__result-text order__result-text--email">{{email}}</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="order__result-row">
+                    <div class="order__result-header">Дополнительные товары и услуги</div>
+                    <div class="order__result-text" id="chair-result" data-summ="0"></div>
+                    <div class="order__result-text" id="booster-result" data-summ="0"></div>
+                    <div class="order__result-text" id="meet-result"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="order__in-total row">
+                <div class="col-md-4 order__in-total-span1">Итого</div>
+                <div class="col-md-8 order__in-total-span2">
+                  <div><span id="order-summ" data-start="4620">4620</span><span class="rub">руб.</span></div>
+                  <div id="one-way"><span class="span-1">стоимость трансфера в&nbsp;один конец</span><span class="span-2">с учётом скидки</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 copyright">
+            <div>© 2018–2019 Служба заказа такси «Вежливые люди»</div>
+          </div>
+          <div class="col-md-2">
+            <div class="links"><a href="rules.html">Правила и&nbsp;условия</a></div>
+            <div class="links"><a href="faq.html">Частые вопросы</a></div>
+            <div class="links"><a href="contacts.html">Контакты</a></div>
+          </div>
+          <div class="col-md-4"><a class="social social--vk" href="#"></a><a class="social social--fb" href="#"></a><a class="social social--inst" href="#"></a><a class="social social--ok" href="#"></a><a class="phone" href="tel:88002003839">8 (800) 200-38-39</a>
+            <div class="free8800">
+              <nobr>бесплатно для звонков из&nbsp;России</nobr>
+            </div>
+          </div>
+          <div class="col-md-3 ketov">Дизайн — Юрий Кетов</div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+    <script>var app = angular.module('myApp', []);</script>
+    <!-- BEGIN JIVOSITE CODE {literal}-->
+    <script>(function(){ var widget_id = 'mEb3UbRg1A';var d=document;var w=window;function l(){var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+    <!-- {/literal} END JIVOSITE CODE-->
+    <!-- Yandex.Metrika counter-->
+    <script>(function (m, e, t, r, i, k, a) {m[i] = m[i] || function () {(m[i].a = m[i].a || []).push(arguments)}; m[i].l=1 * new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(51847976, "init", {id:51847976, clickmap:true, trackLinks:true, accurateTrackBounce:true});</script>
+    <noscript>
+      <div><img src="https://mc.yandex.ru/watch/51847976" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter-->
+  </body>
+</html>
