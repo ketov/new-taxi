@@ -1,0 +1,380 @@
+.advantages{
+    background: $dark-blue;
+    color: $white;
+    margin-top: 80px;
+    padding: 105px 0 117px;
+    h2{
+        margin: 0 0 88px 0;
+    }
+    .col-md-8{
+        align-items: center;
+        display: flex;
+    }
+    &__number{
+        max-width: 84px;
+        padding: 0;
+    }
+    p{
+        font-size: 145%;
+    }
+    .row{
+        margin: 0 0 96px;
+    }
+    .row:nth-last-child(1){
+        margin: 0;
+    }
+    .row:nth-last-child(2){
+        margin: 0;
+    }
+    .row:nth-last-child(3){
+        margin: 0;
+    }
+}
+
+#n-1{
+    stroke-dasharray: 430;
+    opacity: 0;
+}
+
+#n-1.n-1--active
+{
+    opacity: 1;
+    animation-name: svganimation;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+}
+
+@keyframes svganimation{
+    from {stroke-dashoffset: 430;}
+    to {stroke-dashoffset: 0;}
+}
+
+
+#n-2{
+    stroke-dasharray: 430;
+    opacity: 0;
+}
+
+#n-2.n-2--active
+{
+    opacity: 1;
+    animation-name: svganimation2;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+}
+
+@keyframes svganimation2{
+    from {stroke-dashoffset: 430;}
+    to {stroke-dashoffset: 0;}
+}
+
+
+#n-3{
+    stroke-dasharray: 430;
+    opacity: 0;
+}
+
+#n-3.n-3--active
+{
+    opacity: 1;
+    animation-name: svganimation3;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+}
+
+@keyframes svganimation3{
+    from {stroke-dashoffset: 430;}
+    to {stroke-dashoffset: 0;}
+}
+
+
+
+#n-4{
+    stroke-dasharray: 430;
+    opacity: 0;
+}
+
+#n-4.n-4--active
+{
+    opacity: 1;
+    animation-name: svganimation4;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+}
+
+@keyframes svganimation4{
+    from {stroke-dashoffset: 430;}
+    to {stroke-dashoffset: 0;}
+}
+
+
+
+#n-5{
+    stroke-dasharray: 430;
+    opacity: 0;
+}
+
+#n-5.n-5--active
+{
+    opacity: 1;
+    animation-name: svganimation5;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+}
+
+@keyframes svganimation5{
+    from {stroke-dashoffset: 430;}
+    to {stroke-dashoffset: 0;}
+}
+
+
+
+
+#n-6{
+    stroke-dasharray: 430;
+    opacity: 0;
+}
+
+#n-6.n-6--active
+{
+    opacity: 1;
+    animation-name: svganimation6;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+}
+
+@keyframes svganimation6{
+    from {stroke-dashoffset: 430;}
+    to {stroke-dashoffset: 0;}
+}
+
+
+
+#n-7{
+    stroke-dasharray: 430;
+    opacity: 0;
+}
+
+#n-7.n-7--active
+{
+    opacity: 1;
+    animation-name: svganimation7;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+}
+
+@keyframes svganimation7{
+    from {stroke-dashoffset: 430;}
+    to {stroke-dashoffset: 0;}
+}
+
+
+
+#n-8{
+    stroke-dasharray: 430;
+    opacity: 0;
+}
+
+#n-8.n-8--active
+{
+    opacity: 1;
+    animation-name: svganimation8;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+}
+
+@keyframes svganimation8{
+    from {stroke-dashoffset: 430;}
+    to {stroke-dashoffset: 0;}
+}
+
+
+
+
+#n-9{
+    stroke-dasharray: 430;
+    opacity: 0;
+}
+
+#n-9.n-9--active
+{
+    opacity: 1;
+    animation-name: svganimation9;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+}
+
+@keyframes svganimation9{
+    from {stroke-dashoffset: 430;}
+    to {stroke-dashoffset: 0;}
+}
+
+
+
+
+
+@media(max-width: 1450px){
+    .advantages{
+        p{
+            font-size: 135%;
+        }
+    }
+}
+
+@media(max-width: 1350px){
+    .advantages{
+        p{
+            font-size: 125%;
+            line-height: 135%;
+        }
+    }
+}
+
+@media(max-width: 1200px){
+    .advantages{
+        margin-top: 52px;
+        padding: 80px 0 90px;
+        p{
+            font-size: 115%;
+            line-height: 145%;
+        }
+        .row{
+            margin: 0 0 68px;
+        }
+        h2{
+            margin: 0 0 60px;
+        }
+    }
+}
+
+@media(max-width: 1100px){
+    .advantages{
+        padding: 60px 0 60px;
+        h2{
+            margin: 0 0 40px;
+        }
+        p{
+            font-size: 145%;
+        }
+        .row{
+            margin: 0 0 56px;
+        }
+        .col-md-4.row{
+            -ms-flex: 0 0 48%;
+            flex: 0 0 48%;
+            max-width: 48%;
+        }
+        .row:nth-last-child(2){
+            margin: 0 0 56px;
+        }
+        .row:nth-last-child(3){
+            margin: 0 0 56px;
+        }
+    }
+}
+
+@media(max-width: 1000px){
+    .advantages{
+        p{
+            font-size: 135%;
+        }
+    }
+}
+
+@media(max-width: 900px){
+    .advantages{
+        p{
+            font-size: 125%;
+            line-height: 135%;
+            margin: 0;
+        }
+        &__number{
+            max-width: 70px;
+        }
+    }
+}
+
+@media(max-width: 850px){
+    .advantages{
+        margin-top: 52px;
+        padding: 48px 0 60px;
+        p{
+            font-size: 115%;
+            line-height: 145%;
+        }
+        .row{
+            margin: 0 0 40px;
+        }
+        .row:nth-last-child(2){
+            margin: 0 0 40px;
+        }
+        .row:nth-last-child(3){
+            margin: 0 0 40px;
+        }
+        h2{
+            margin: 0 0 20px;
+        }
+    }
+}
+
+@media(max-width: 767px){
+    /*.advantages{
+        .col-md-8{
+            align-items: normal;
+            padding: 0;
+            p{
+                display: block;
+            }
+        }
+        &__number{
+            max-height: 100px;
+        }
+    }*/
+    .advantages{
+        .col-md-4{
+            display: block;
+            margin: 0 auto 40px;
+            padding: 0;
+            text-align: center;
+            .col-md-4{
+                margin: 0 auto 16px;
+            }
+            .col-md-8{
+                text-align: center;
+                p{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 600px){
+    .advantages{
+        margin-top: 28px;
+        .col-md-4.row{
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+@media(max-width: 370px){
+    .advantages{
+        padding: 40px 0 44px;
+        &__number{
+            max-width: 56px;        
+        }
+    }
+}
+
+
+
+@media(max-width: 900px){
+    #n-1, #n-2, #n-3, #n-4, #n-5, #n-6, #n-7, #n-8, #n-9{
+        opacity: 1 !important;
+        animation-name: none !important;
+    }
+
+}

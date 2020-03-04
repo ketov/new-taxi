@@ -1,0 +1,519 @@
+doctype html
+html
+    head
+        // Global site tag (gtag.js) - Google Analytics
+        script(async src="https://www.googletagmanager.com/gtag/js?id=UA-132117487-1")
+        script window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-132117487-1');
+
+        title Выбор тарифа
+        meta(name="description", content="")
+        meta(name="keywords", content="")
+        meta(charset="UTF-8") 
+        meta(name='viewport' content='width=device-width,initial-scale=1')
+        meta(content='true' name='HandheldFriendly')
+        meta(content='width' name='MobileOptimized')
+        meta(content='yes' name='apple-mobile-web-app-capable')
+        link(rel="stylesheet" type="text/css" href="assets/css/all.min.css")
+        link(ref="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon")
+        link(ref="icon" href="assets/img/favicon.ico" type="image/x-icon")
+
+    body
+        include includes/header-inner
+
+        section.search.search--inner.search--pattern
+            div.container
+                ul.search__breadcrumbs(itemscope="" itemtype="http://schema.org/BreadcrumbList")
+                    li(itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement" class="route-item")
+                        a(href="#" itemprop="item")
+                            span(itemprop="name") Главная
+                            meta(itemprop="position" content="1")
+                    li
+                        span.splash /
+                    li(itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement" class="route-item")
+                        a(href="#" itemprop="item")
+                            span(itemprop="name") Такси из Ялты
+                            meta(itemprop="position" content="2")
+                    li
+                        span.splash /
+                    li(itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement" class="route-item")
+                        a(href="#" itemprop="item")
+                            span(itemprop="name") Такси из Ялты в аэропорт Симферополя
+                            meta(itemprop="position" content="3")
+                    li.clear
+
+
+            h1 Такси из&nbsp;Ялты в&nbsp;аэропорт Симферополя
+            div.container
+                div.row
+                    form.col-md-10.offset-1
+                        div.row
+                            div.col-md-4
+                                fieldset
+                                    fieldset
+                                        input.input.focus.with-hidden(name="from" id="from" value="Ялта" autocomplete="off")
+                                        label(for="from") Откуда
+                                        ul.suggestion-menu
+                                            li Алупка
+                                            li Бахчисарай
+                                            li Верхняя Кутузовка
+                                            li Гаспра
+                                            li Евпатория
+
+                            div.col-md-4
+                                fieldset
+                                    fieldset
+                                        input.input.focus.with-hidden(name="where" id="where" value="Симферополь" autocomplete="off")
+                                        label(for="where") Куда
+                                        ul.suggestion-menu
+                                            li Алупка
+                                            li Бахчисарай
+                                            li Верхняя Кутузовка
+                                            li Гаспра
+                                            li Евпатория
+
+                            div.col-md-2
+                                fieldset
+                                    input.input(id="passengers" readonly autocomplete="off")
+                                    label(for="passengers" id="label-for-passengers") Пассажиры
+
+                                    div.passengers-add
+                                        div.row
+                                            div.col-md-6.passengers-add__text Взрослые
+                                            div.col-md-6.row.passengers-add__actions
+                                                div.col-md-4
+                                                    button.passengers-add__button#adult-minus(type="button") -
+                                                div.col-md-4#adult-number 0
+                                                div.col-md-4
+                                                    button.passengers-add__button#adult-plus(type="button") +
+
+                                        div.row
+                                            div.col-md-6.passengers-add__text Дети
+                                            div.col-md-6.row.passengers-add__actions
+                                                div.col-md-4
+                                                    button.passengers-add__button#children-minus(type="button") -
+                                                div.col-md-4#children-number 0
+                                                div.col-md-4
+                                                    button.passengers-add__button#children-plus(type="button") +
+                                        input#adult-number-input(type="hidden" value="0")
+                                        input#children-number-input(type="hidden" value="0")
+
+                            div.col-md-2
+                                button Найти
+
+            include includes/tariffs
+
+
+        section.reviews
+            h2 Отзывы
+            div.container
+                div.row
+                    div.col-md-12
+                        div.swiper-reviews.swiper-container
+                            div.swiper-wrapper
+                                div.swiper-slide(itemscope itemtype="http://schema.org/Review")
+                                    img.reviews__triangle(src="assets/img/reviews-triangle.svg" alt="")
+                                    div.reviews__stars
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.clear
+
+                                    div.reviews__itemreviewed(itemprop="itemreviewed") Вежливые люди
+
+                                    div.reviews__rating(itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating")
+                                        meta(itemprop="worstRating" content="0")
+                                        p Оценка:
+                                            span(itemprop="ratingValue") 5
+                                            | из
+                                            span(itemprop="bestRating") 5
+
+                                    div(itemprop="reviewBody")
+                                        p
+                                            | В&nbsp;наше время, отношение таксистов к&nbsp;мамам с&nbsp;детьми
+                                            | какое-то предвзятое. Никогда не&nbsp;получалось уехать на&nbsp;такси
+                                            | с&nbsp;первого раза, таксисты отказывались везти с&nbsp;ребенком без&nbsp;кресла,
+                                            | хотя оператор был предупрежден о&nbsp;необходимости наличия кресла.
+                                    //a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте
+                                    div.author
+                                        span(itemprop="author" itemscope itemtype="http://schema.org/Person")
+                                            span(itemprop="name") Любовь Шишкина
+
+                                div.swiper-slide(itemscope itemtype="http://schema.org/Review")
+                                    img.reviews__triangle(src="assets/img/reviews-triangle.svg" alt="")
+                                    div.reviews__stars
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.clear
+
+                                    div.reviews__itemreviewed(itemprop="itemreviewed") Вежливые люди
+
+                                    div.reviews__rating(itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating")
+                                        meta(itemprop="worstRating" content="0")
+                                        p Оценка:
+                                            span(itemprop="ratingValue") 4
+                                            | из
+                                            span(itemprop="bestRating") 5
+
+
+                                    div(itemprop="reviewBody")
+                                        p
+                                            | Часто пользуюсь услугами этой службы такси. Данное такси никогда не&nbsp;подводит,
+                                            | приезжает точно в&nbsp;срок. У&nbsp;водителя всегда есть сдача, какую купюру я бы
+                                            | не&nbsp;дала.
+                                    //a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте
+                                    div.author
+                                        span(itemprop="author" itemscope itemtype="http://schema.org/Person")
+                                            span(itemprop="name") Анна Михайлова
+
+                                div.swiper-slide(itemscope itemtype="http://schema.org/Review")
+                                    img.reviews__triangle(src="assets/img/reviews-triangle.svg" alt="")
+                                    div.reviews__stars
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.clear
+
+                                    div.reviews__itemreviewed(itemprop="itemreviewed") Вежливые люди
+
+                                    div.reviews__rating(itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating")
+                                        meta(itemprop="worstRating" content="0")
+                                        p Оценка:
+                                            span(itemprop="ratingValue") 5
+                                            | из
+                                            span(itemprop="bestRating") 5
+
+                                    div(itemprop="reviewBody")
+                                        p
+                                            | Машинку назначили быстро, сообщение о&nbsp;машине пришло буквально
+                                            | в&nbsp;течение 5&nbsp;минут. Водитель даже без&nbsp;просьбы помог
+                                            | с&nbsp;чемоданом. Вёз аккуратно, вёл себя очень вежливо.
+                                    //a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте
+                                    div.author
+                                        span(itemprop="author" itemscope itemtype="http://schema.org/Person")
+                                            span(itemprop="name") Евгения Житникова
+
+                                div.swiper-slide(itemscope itemtype="http://schema.org/Review")
+                                    img.reviews__triangle(src="assets/img/reviews-triangle.svg" alt="")
+                                    div.reviews__stars
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.clear
+
+                                    div.reviews__itemreviewed(itemprop="itemreviewed") Вежливые люди
+
+                                    div.reviews__rating(itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating")
+                                        meta(itemprop="worstRating" content="0")
+                                        p Оценка:
+                                            span(itemprop="ratingValue") 5
+                                            | из
+                                            span(itemprop="bestRating") 5
+
+                                    div(itemprop="reviewBody")
+                                        p
+                                            | Заказывал через приложение, машина приехала через 10&nbsp;минут.
+                                            | Водитель помог убрать багаж. Сам по&nbsp;себе человек приятный.
+                                            | Машина — иномарка, чистая и&nbsp;ухоженная. В&nbsp;общем, остались
+                                            | только приятные впечатления.
+                                    //a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте
+                                    div.author
+                                        span(itemprop="author" itemscope itemtype="http://schema.org/Person")
+                                            span(itemprop="name") Марк Залогин
+
+                                div.swiper-slide(itemscope itemtype="http://schema.org/Review")
+                                    img.reviews__triangle(src="assets/img/reviews-triangle.svg" alt="")
+                                    div.reviews__stars
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.clear
+
+                                    div.reviews__itemreviewed(itemprop="itemreviewed") Вежливые люди
+
+                                    div.reviews__rating(itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating")
+                                        meta(itemprop="worstRating" content="0")
+                                        p Оценка:
+                                            span(itemprop="ratingValue") 3
+                                            | из
+                                            span(itemprop="bestRating") 5
+
+                                    div(itemprop="reviewBody")
+                                        p
+                                            | Этим летом ездили (я, сестра и&nbsp;ее&nbsp;дочка) отдыхать в&nbsp;Коктебель.
+                                            | В&nbsp;Коктебеле мы были 5 дней отпуска, остальные 5 дней решили провести
+                                            | в&nbsp;Феодосии. Встал вопрос как&nbsp;туда добраться.
+                                    //a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте
+                                    div.author
+                                        span(itemprop="author" itemscope itemtype="http://schema.org/Person")
+                                            span(itemprop="name") Пётр Селедков
+
+                                div.swiper-slide(itemscope itemtype="http://schema.org/Review")
+                                    img.reviews__triangle(src="assets/img/reviews-triangle.svg" alt="")
+                                    div.reviews__stars
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.clear
+
+                                    div.reviews__itemreviewed(itemprop="itemreviewed") Вежливые люди
+
+                                    div.reviews__rating(itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating")
+                                        meta(itemprop="worstRating" content="0")
+                                        p Оценка:
+                                            span(itemprop="ratingValue") 4
+                                            | из
+                                            span(itemprop="bestRating") 5
+
+                                    div(itemprop="reviewBody")
+                                        p
+                                            | Воспользовалась услугами этого милого такси в&nbsp;феврале,
+                                            | когда мы с&nbsp;мужем отдыхали в&nbsp;Ялте. Быстро и&nbsp;немудрено оформили
+                                            | туда и&nbsp;обратно трансфер. Водитель развлекал нас всю дорогу,
+                                            | так что советую.
+                                    //a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте
+                                    div.author
+                                        span(itemprop="author" itemscope itemtype="http://schema.org/Person")
+                                            span(itemprop="name") Татьяна Иванова
+
+                                div.swiper-slide(itemscope itemtype="http://schema.org/Review")
+                                    img.reviews__triangle(src="assets/img/reviews-triangle.svg" alt="")
+                                    div.reviews__stars
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.clear
+
+                                    div.reviews__itemreviewed(itemprop="itemreviewed") Вежливые люди
+
+                                    div.reviews__rating(itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating")
+                                        meta(itemprop="worstRating" content="0")
+                                        p Оценка:
+                                            span(itemprop="ratingValue") 4
+                                            | из
+                                            span(itemprop="bestRating") 5
+
+                                    div(itemprop="reviewBody")
+                                        p
+                                            | Возвращалась из&nbsp;командировки. Очень устала и&nbsp;хотелось быстрее попасть домой.
+                                            | Пара служб предложила мне ждать, достаточно долго. Тогда я&nbsp;попробовала испытать
+                                            | судьбу и&nbsp;позвонила еще в&nbsp;службу Вежливые Люди.
+                                    //a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте
+                                    div.author
+                                        span(itemprop="author" itemscope itemtype="http://schema.org/Person")
+                                            span(itemprop="name") Елена Никитина
+
+                                div.swiper-slide(itemscope itemtype="http://schema.org/Review")
+                                    img.reviews__triangle(src="assets/img/reviews-triangle.svg" alt="")
+                                    div.reviews__stars
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star.reviews__star--active
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.reviews__star
+                                            img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                            img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+                                        div.clear
+
+                                    div.reviews__itemreviewed(itemprop="itemreviewed") Вежливые люди
+
+                                    div.reviews__rating(itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating")
+                                        meta(itemprop="worstRating" content="0")
+                                        p Оценка:
+                                            span(itemprop="ratingValue") 4
+                                            | из
+                                            span(itemprop="bestRating") 5
+
+                                    div(itemprop="reviewBody")
+                                        p
+                                            | Прилетал в&nbsp;Крым по&nbsp;работе, на&nbsp;прошлой неделе. Воспользовался
+                                            | поисковиком чтобы найти такси. Выбрал первый в&nbsp;списке.
+                                            | Попал на&nbsp;сайт данного оператора, посмотрел тарифы,
+                                            | там же оставил онлайн заявку. По&nbsp;прилету ждал водитель.
+                                    //a(href="#" itemprop="url" target="_blank") Читать весь отзыв на сайте
+                                    div.author
+                                        span(itemprop="author" itemscope itemtype="http://schema.org/Person")
+                                            span(itemprop="name") Мария Баранова
+
+                            div.swiper-pagination.swiper-pagination--reviews
+
+        
+        section.destinations
+            h2 Все направления в&nbsp;аэропорт Симферополя
+            div.container
+                div.row
+                    div.col-md-6
+                        div.destinations__destination
+                            a(href="#") Алупка — Симферополь
+                            span.price 1 500 руб.
+
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a(href="#") Бахчисарай — Симферополь
+                            span.price 1 190 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a(href="#") Белогорск — Симферополь
+                            span.price 990 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a(href="#") Верхняя Кутузовка — Симферополь
+                            span.price 890 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a(href="#") Гаспра — Симферополь
+                            span.price 1 490 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a(href="#") Гурзуф — Симферополь
+                            span.price 1 090 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a(href="#") Джанкой — Симферополь
+                            span.price 1 190 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a(href="#") Заозерное — Симферополь
+                            span.price 1 190 руб.
+
+
+
+                div.row
+                    a.button(href="#") Весь список
+
+
+
+
+        include includes/question-answer
+
+        section.seo
+            div.container
+                div.row
+                    div.col-md-8.offset-2
+                        p
+                            | Услуга трансфера — альтернатива заказу такси в&nbsp;аэропорт в&nbsp;чужой стране.
+                            | Возможен автомобильный трансфер между городами или&nbsp;туристическими местами,
+                            | но&nbsp;чаще всего это услуга поездки от&nbsp;или&nbsp;до&nbsp;транспортного узла: аэропорта,
+                            | железнодорожного или&nbsp;автовокзала, морского или&nbsp;речного порта.
+
+                        p
+                            | Бронирование трансферов обязательно делается заранее: для&nbsp;разных классов авто
+                            | в&nbsp;разных странах минимальное время, за&nbsp;которое нужно заказать
+                            | трансфер — от&nbsp;16 до&nbsp;24 часов. Предварительный заказ дает перевозчику подготовиться
+                            | к&nbsp;поездке, это&nbsp;объясняет преимущества индивидуальных трансферов.
+
+        include includes/footer
+       
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+        script(src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js")
+        script(src="assets/js/app.min.js")
+
+        // BEGIN JIVOSITE CODE {literal}
+        script (function(){ var widget_id = 'mEb3UbRg1A';var d=document;var w=window;function l(){var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+        // {/literal} END JIVOSITE CODE
+
+        // Yandex.Metrika counter
+        script (function (m, e, t, r, i, k, a) {m[i] = m[i] || function () {(m[i].a = m[i].a || []).push(arguments)}; m[i].l=1 * new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(51847976, "init", {id:51847976, clickmap:true, trackLinks:true, accurateTrackBounce:true});
+        noscript
+            div
+                img(src="https://mc.yandex.ru/watch/51847976" style="position:absolute; left:-9999px;" alt="")
+        // /Yandex.Metrika counter

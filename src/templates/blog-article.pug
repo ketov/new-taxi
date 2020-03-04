@@ -1,0 +1,202 @@
+doctype html
+html
+    head
+        // Global site tag (gtag.js) - Google Analytics
+        script(async src="https://www.googletagmanager.com/gtag/js?id=UA-132117487-1")
+        script window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-132117487-1');
+
+        title Блог.Статья
+        meta(name="description", content="")
+        meta(name="keywords", content="")
+        meta(charset="UTF-8") 
+        meta(name='viewport' content='width=device-width,initial-scale=1')
+        meta(content='true' name='HandheldFriendly')
+        meta(content='width' name='MobileOptimized')
+        meta(content='yes' name='apple-mobile-web-app-capable')
+        link(rel="stylesheet" type="text/css" href="assets/css/all.min.css")
+        link(ref="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon")
+        link(ref="icon" href="assets/img/favicon.ico" type="image/x-icon")
+
+    body
+        include includes/header-inner
+        section.search.search--inner.search--blog.search--pattern
+            div.container
+                ul.search__breadcrumbs(itemscope="" itemtype="http://schema.org/BreadcrumbList")
+                    li(itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement" class="route-item")
+                        a(href="#" itemprop="item")
+                            span(itemprop="name") Главная
+                            meta(itemprop="position" content="1")
+                    li
+                        span.splash /
+                    li(itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement" class="route-item")
+                        a(href="#" itemprop="item")
+                            span(itemprop="name") Амстердам
+                            meta(itemprop="position" content="2")
+                    li
+                        span.splash /
+                    li(itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement" class="route-item")
+                        a(href="#" itemprop="item")
+                            span(itemprop="name") Как добраться из&nbsp;аэропорта Амстердама в&nbsp;город?
+                            meta(itemprop="position" content="3")
+                    li.clear
+
+
+            h1 Как добраться из&nbsp;аэропорта Амстердама в&nbsp;город?
+
+        section.blog.blog--article
+            div.container
+                div.row.transport
+                    div.col-md-2#blog-bus-link
+                        img(src="assets/img/blog-bus.svg" alt="автобус")
+                        div.transport-scroll Автобус
+                    div.col-md-2#blog-tbus-link
+                        img(src="assets/img/blog-tbus.svg" alt="троллейбус")
+                        div.transport-scroll Троллейбус
+                    div.col-md-2#blog-taxi-link
+                        img(src="assets/img/blog-taxi.svg" alt="такси")
+                        div.transport-scroll Такси
+                    div.col-md-2#blog-car-link
+                        img(src="assets/img/blog-car.svg" alt="аренда авто")
+                        div.transport-scroll 
+                            nobr Аренда авто
+                    div.col-md-2#blog-companion-link
+                        img(src="assets/img/blog-companion.svg" alt="попутчик")
+                        div.transport-scroll Попутчик
+                    div.col-md-2#blog-train-link
+                        img(src="assets/img/blog-train.svg" alt="электричка")
+                        div.transport-scroll Электричка
+
+                div.row.content
+                    div.col-md-8.offset-2
+                        h2 Из&nbsp;аэропорта Схипхол в&nbsp;Амстердам: как&nbsp;добраться самостоятельно?
+                        p 
+                            | Из&nbsp;аэропорта Схипхол до&nbsp;Амстердама можно доехать 
+                            | на&nbsp;поезде, автобусе или&nbsp;такси. Также вы можете арендовать 
+                            | авто без&nbsp;водителя. Длительность поездки на&nbsp;поезде составляет 
+                            | 17 минут, ее стоимость — от&nbsp;4,2&nbsp;евро. Путешествие 
+                            | на&nbsp;автобусе продлится 30 минут, цена билета — 5&nbsp;евро. 
+                            | Такси довезет вас за&nbsp;25&nbsp;минут, стоимость услуги составит минимум 
+                            | 52&nbsp;евро. Расстояние между аэропортом Схипхол и&nbsp;Амстердамом — 18&nbsp;км.
+                        p
+                            | Время поездки на&nbsp;автобусе может увеличиться до&nbsp;1 часа&nbsp;из-за пробок на&nbsp;дороге. 
+                            | Из&nbsp;аэропорта в&nbsp;разных направлениях отправляется очень много автобусов, но&nbsp;найти 
+                            | нужный маршрут не&nbsp;проблема: на&nbsp;остановке есть электронное табло, где указан номер 
+                            | автобуса и&nbsp;его расписание. До&nbsp;Центрального вокзала не&nbsp;получится добраться на&nbsp;автобусе, 
+                            | зато это можно сделать на&nbsp;поезде. Автоматы по&nbsp;продаже билетов на&nbsp;поезд принимают 
+                            | только пластиковые карты и&nbsp;монеты. В&nbsp;кассе такой билет обойдется на&nbsp;1&nbsp;евро дороже, 
+                            | чем в&nbsp;автомате или&nbsp;онлайн. Бывает, что&nbsp;поезда не&nbsp;ходят из-за ремонта на&nbsp;дорогах, 
+                            | поэтому перед поездкой стоит свериться с&nbsp;расписанием на&nbsp;сайте 
+                            | Голландских железных дорог.
+
+                        h2#blog-bus Автобус
+                        p 
+                            | Из&nbsp;аэропорта Схипхол до&nbsp;Амстердама можно доехать 
+                            | на&nbsp;поезде, автобусе или&nbsp;такси. Также вы можете арендовать 
+                            | авто без&nbsp;водителя. Длительность поездки на&nbsp;поезде составляет 
+                            | 17 минут, ее стоимость — от&nbsp;4,2&nbsp;евро. Путешествие 
+                            | на&nbsp;автобусе продлится 30 минут, цена билета — 5&nbsp;евро. 
+                            | Такси довезет вас за&nbsp;25&nbsp;минут, стоимость услуги составит минимум 
+                            | 52&nbsp;евро. Расстояние между аэропортом Схипхол и&nbsp;Амстердамом — 18&nbsp;км.
+
+                        h2#blog-tbus Троллейбус
+                        p 
+                            | Из&nbsp;аэропорта Схипхол до&nbsp;Амстердама можно доехать 
+                            | на&nbsp;поезде, автобусе или&nbsp;такси. Также вы можете арендовать 
+                            | авто без&nbsp;водителя. Длительность поездки на&nbsp;поезде составляет 
+                            | 17 минут, ее стоимость — от&nbsp;4,2&nbsp;евро. Путешествие 
+                            | на&nbsp;автобусе продлится 30 минут, цена билета — 5&nbsp;евро. 
+                            | Такси довезет вас за&nbsp;25&nbsp;минут, стоимость услуги составит минимум 
+                            | 52&nbsp;евро. Расстояние между аэропортом Схипхол и&nbsp;Амстердамом — 18&nbsp;км.
+
+                        h2#blog-taxi Такси
+                        p 
+                            | Из&nbsp;аэропорта Схипхол до&nbsp;Амстердама можно доехать 
+                            | на&nbsp;поезде, автобусе или&nbsp;такси. Также вы можете арендовать 
+                            | авто без&nbsp;водителя. Длительность поездки на&nbsp;поезде составляет 
+                            | 17 минут, ее стоимость — от&nbsp;4,2&nbsp;евро. Путешествие 
+                            | на&nbsp;автобусе продлится 30 минут, цена билета — 5&nbsp;евро. 
+                            | Такси довезет вас за&nbsp;25&nbsp;минут, стоимость услуги составит минимум 
+                            | 52&nbsp;евро. Расстояние между аэропортом Схипхол и&nbsp;Амстердамом — 18&nbsp;км.
+                        a.button(href="#") Заказать такси
+
+                        h2#blog-car Аренда авто
+                        p 
+                            | Из&nbsp;аэропорта Схипхол до&nbsp;Амстердама можно доехать 
+                            | на&nbsp;поезде, автобусе или&nbsp;такси. Также вы можете арендовать 
+                            | авто без&nbsp;водителя. Длительность поездки на&nbsp;поезде составляет 
+                            | 17 минут, ее стоимость — от&nbsp;4,2&nbsp;евро. Путешествие 
+                            | на&nbsp;автобусе продлится 30 минут, цена билета — 5&nbsp;евро. 
+                            | Такси довезет вас за&nbsp;25&nbsp;минут, стоимость услуги составит минимум 
+                            | 52&nbsp;евро. Расстояние между аэропортом Схипхол и&nbsp;Амстердамом — 18&nbsp;км.
+                        a.button(href="#") Арендовать авто
+
+                        h2#blog-companion Попутчик
+                        p 
+                            | Из&nbsp;аэропорта Схипхол до&nbsp;Амстердама можно доехать 
+                            | на&nbsp;поезде, автобусе или&nbsp;такси. Также вы можете арендовать 
+                            | авто без&nbsp;водителя. Длительность поездки на&nbsp;поезде составляет 
+                            | 17 минут, ее стоимость — от&nbsp;4,2&nbsp;евро. Путешествие 
+                            | на&nbsp;автобусе продлится 30 минут, цена билета — 5&nbsp;евро. 
+                            | Такси довезет вас за&nbsp;25&nbsp;минут, стоимость услуги составит минимум 
+                            | 52&nbsp;евро. Расстояние между аэропортом Схипхол и&nbsp;Амстердамом — 18&nbsp;км.
+                        a.button(href="#") Уехать с попутчиком
+
+                        h2#blog-train Электричка
+                        p 
+                            | Из&nbsp;аэропорта Схипхол до&nbsp;Амстердама можно доехать 
+                            | на&nbsp;поезде, автобусе или&nbsp;такси. Также вы можете арендовать 
+                            | авто без&nbsp;водителя. Длительность поездки на&nbsp;поезде составляет 
+                            | 17 минут, ее стоимость — от&nbsp;4,2&nbsp;евро. Путешествие 
+                            | на&nbsp;автобусе продлится 30 минут, цена билета — 5&nbsp;евро. 
+                            | Такси довезет вас за&nbsp;25&nbsp;минут, стоимость услуги составит минимум 
+                            | 52&nbsp;евро. Расстояние между аэропортом Схипхол и&nbsp;Амстердамом — 18&nbsp;км.
+
+                        
+                        h2 Поезд аэропорт Схипхол — Амстердам
+                        img(src="assets/img/blog-img-1.png" alt="вокзал")
+                        div.row.params
+                            div.col-md-4
+                                img(src="assets/img/blog-price.svg" alt="цена")
+                                div.text Цена: €4,2
+                            div.col-md-4
+                                img(src="assets/img/blog-wait.svg" alt="ожидание")
+                                div.text Ожидание: 15 мин–1 ч
+                            div.col-md-4
+                                img(src="assets/img/blog-taxi.svg" alt="время в пути")
+                                div.text Время в пути: 17 мин
+                        p
+                            | Поезд из&nbsp;аэропорта Схипхол в&nbsp;Амстердам курсирует круглосуточно. 
+                            | Длительность поездки составит 17&nbsp;минут, стоимость билета — от&nbsp;4,2&nbsp;евро. 
+                            | Билеты можно приобрести онлайн на&nbsp;сайте Голландских железных дорог, 
+                            | в&nbsp;кассе или&nbsp;в&nbsp;специальных сине-желтых автоматах на&nbsp;вокзале.
+
+                div.row
+                    div.col-md-8.offset-2.blog--additional
+                        h4 Читайте также:
+                        div.article
+                            a(href="#") Как добраться из Амстердама в Брюссель?
+                        div.article
+                            a(href="#") Как проехать из деревни Шамары Пермского края в посёлок Усть-Волчехуйск?
+                div.row
+                    div.col-md-8.offset-2.blog--share
+                        div.ya-share2(data-services="vkontakte,facebook,odnoklassniki,moimir,twitter")  
+
+
+        include includes/footer
+       
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+        script(src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js")
+        script(src="assets/js/app.min.js")
+        script(src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js")
+        script(src="https://yastatic.net/share2/share.js")
+
+        // BEGIN JIVOSITE CODE {literal}
+        script (function(){ var widget_id = 'mEb3UbRg1A';var d=document;var w=window;function l(){var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+        // {/literal} END JIVOSITE CODE
+
+        // Yandex.Metrika counter
+        script (function (m, e, t, r, i, k, a) {m[i] = m[i] || function () {(m[i].a = m[i].a || []).push(arguments)}; m[i].l=1 * new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(51847976, "init", {id:51847976, clickmap:true, trackLinks:true, accurateTrackBounce:true});
+        noscript
+            div
+                img(src="https://mc.yandex.ru/watch/51847976" style="position:absolute; left:-9999px;" alt="")
+        // /Yandex.Metrika counter

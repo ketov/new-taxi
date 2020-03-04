@@ -1,0 +1,379 @@
+.blog{
+    .letter{
+        span.letter-container{
+            background: $dark-blue;
+            border-radius: 40px;
+            color: $white;
+            display: block;
+            height: 48px;
+            position: relative;
+            width: 48px;
+            span.letter-sign{
+                font-family: $CB;
+                font-size: 130%;
+                position: absolute;
+                text-align: center;
+                top: 9px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.blog{
+    &--additional{
+        margin-bottom: 32px;
+        .article{
+            margin-top: 18px;
+        }
+    }
+    &--cities{
+        padding-top: 92px;
+        .city{
+            padding-left: 0;
+            margin-bottom: 72px;
+            img{
+                float: left;
+                max-width: 144px;
+                width: 13%;
+            }
+            .text{
+                float: right;
+                width: 85%;
+            }
+        }
+        .country{
+            color: $dark-gray;
+            margin-top: 3px;
+        }
+        a{
+            font-size: 125%;
+        }
+        p{
+            line-height: 145%;
+            margin-bottom: 6px;
+            margin-top: 12px;
+        }
+    }
+    
+    &--city{
+        h2{
+            text-align: left;
+            padding: 84px 0 52px;
+        }
+        h3 a, h2 a{
+            border-bottom: none;
+            background-image: none;
+        }
+        .col-md-9{
+            padding-left: 0;
+            padding-right: 52px;
+        }
+        .col-md-3{
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .city{
+            padding-left: 0;
+            margin-bottom: 72px;
+            img{
+                float: left;
+                max-width: 144px;
+                width: 17%;
+            }
+            .text{
+                float: right;
+                width: 81%;
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        .country{
+            color: $dark-gray;
+            margin-top: 3px;
+        }
+        a{
+            font-size: 125%;
+        }
+        p{
+            line-height: 145%;
+            margin-bottom: 6px;
+            margin-top: 12px;
+        }
+        .blog-seo{
+            padding: 24px 24px 24px 24px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    
+    .blog-seo{
+        box-shadow: 0 7px 56px 0 rgba(210,214,217,.5);
+        p{
+            font-size: 100%;
+            margin-top: 4px;
+        }
+        h4{
+            margin-top: 16px;
+        }
+    }
+    
+    &--article{
+        padding-top: 60px;
+        .button{
+            font-size: 85%;
+            margin: 20px auto 0;
+        }
+        .blog--additional{
+            margin-top: 52px;
+        }
+        a{
+            font-size: 125%;
+        }
+        .transport{
+            -ms-flex-pack: distribute;
+            justify-content: center;
+            .col-md-2{
+                cursor: pointer;
+                &:hover .transport-scroll{
+                    color: $green;
+                }
+            }
+            img{
+                display: table;
+                margin: 0 auto;
+            }
+            .transport-scroll{
+                border-bottom: 1px dashed $green;
+                display: table;
+                font-size: 125%;
+                line-height: 100%;
+                margin: 0 auto;
+                transition: 0.2s;
+                &:hover{
+                    color: $green;
+                }
+            }
+        }
+        .content{
+            p{
+                margin-top: 16px;
+            }
+            h1, h2, h3, h4, h5{
+                margin-top: 92px;
+                padding: 0;
+                text-align: left;
+            }
+            h2, h3{
+                font-size: 200%;
+                text-align: center;
+            }
+            img{
+                margin-top: 12px;
+                max-width: 100%;
+            }
+            .params{
+                -ms-flex-pack: distribute;
+                justify-content: space-around;
+                padding-top: 32px;
+                img{
+                    display: table;
+                    margin: 0 auto;
+                }
+                .text{
+                    display: table;
+                    font-size: 125%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1380px){
+
+}
+
+@media(max-width: 1200px){
+    .search.search--blog.search--blog{
+        h1{
+            font-size: 275%;
+            line-height: 105%;
+        }
+    }
+    .blog--article a, .blog--cities a, .blog--city a {
+        font-size: 120%;
+    }
+    .blog{
+        &--cities{
+            padding-top: 72px;
+            .city{
+                margin-bottom: 52px;
+            }
+        }
+        &--cities ~ footer{
+            margin-top: 60px;
+        }
+        &--city ~ footer{
+            margin-top: 120px;
+        }
+        &--city{
+            h2{
+                padding: 64px 0 32px;
+            }
+            .city{
+                margin-bottom: 52px;
+            }
+        }
+        &--article{
+            padding-top: 40px;
+            .content{
+                h1, h2, h3, h4, h5{
+                    margin-top: 60px;
+                }
+            }
+            .transport {
+                .transport-scroll {
+                    font-size: 110%;
+                }
+            }
+            .blog--additional {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1100px){
+    .blog{
+         &--article{
+            padding-top: 28px;
+            .content{
+                h1, h2, h3, h4, h5{
+                    margin-top: 40px;
+                    margin-bottom: 0;
+                }
+                p{
+                    line-height: 140%;
+                }
+                .params {
+                    .text {
+                        font-size: 110%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1000px){
+    .search.search--blog.search--blog{
+        h1{
+            font-size: 245%;
+            line-height: 105%;
+        }
+    }
+    .blog--article a, .blog--cities a, .blog--city a {
+        font-size: 110%;
+    }
+    .blog--cities p, .blog--city p {
+        margin-bottom: 4px;
+        margin-top: 8px;
+    }
+}
+
+@media(max-width: 850px){
+    .blog{
+        &--cities{
+            padding-top: 52px;
+            .city{                
+                margin-bottom: 32px;
+            }
+        }
+        &--cities ~ footer{
+            margin-top: 40px;
+        }
+        &--city ~ footer{
+            margin-top: 80px;
+        }
+        &--city{
+            h2{
+                padding: 44px 0 12px;
+            }
+            .blog-seo {
+                padding: 16px;
+            }
+            .city {
+                margin-bottom: 32px;
+            }
+        }
+        .blog-seo p {
+            line-height: 125%;
+        }
+    }
+    .blog--article a, .blog--cities a, .blog--city a {
+        font-size: 105%;
+    }
+}
+
+@media(max-width: 767px){
+    .blog--cities .city img, .blog--city .city img {
+        width: auto;
+    }
+    .blog .letter span.letter-container{
+        margin-bottom: 20px;
+    }
+    .blog--cities .city .text {
+        float: left;
+        margin-top: 16px;
+        width: 100%;
+    }
+    .blog{
+        &--city{
+            .city .text {
+                float: left;
+                width: 100%;
+            }
+            p{
+                margin-top: 4px;
+            }
+            h3{
+                margin-top: 12px;
+            }
+        }
+        &--article{
+            padding-top: 8px;
+            .transport{
+                .col-md-2{
+                    margin-top: 16px;
+                }
+            }
+            .content{
+                .col-md-8.offset-2{
+                    margin-left: 0;
+                }
+            }
+            .blog--additional, .col-md-8.offset-2.blog--share {
+                margin-left: 0;
+            }
+            .params{
+                .col-md-4{
+                    margin-top: 12px;
+                }
+            }
+        }
+        .blog-seo{
+            margin-top: 32px;
+        }
+    }
+}
+
+@media(max-width: 650px){
+    
+}
+
+@media(max-width: 400px){
+    
+}

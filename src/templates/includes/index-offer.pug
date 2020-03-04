@@ -1,0 +1,66 @@
+section.index-offer
+    div.container
+        div.row(data-animation="fadeIn")
+            div.col-md-12
+                h1 Заказывайте такси-трансфер в&nbsp;аэропорт Симферополя и&nbsp;города Крыма
+
+        div.search.search--main#search-index(data-animation="fadeIn" data-animation-delay="600ms")
+            div.row
+                form.col-md-10.offset-1.index-offer__form
+                    div.row
+                        div.col-md-4
+                            fieldset
+                                fieldset
+                                    input.input.focus.with-hidden(name="from" id="from" value="Симферополь" autocomplete="off")
+                                    label(for="from") Откуда
+                                    ul.suggestion-menu
+                                        li Алупка
+                                        li Бахчисарай
+                                        li Верхняя Кутузовка
+                                        li Гаспра
+                                        li Евпатория
+
+                        div.col-md-4
+                            fieldset
+                                fieldset
+                                    input.input.with-hidden(name="where" id="where" autocomplete="off")
+                                    label(for="where") Куда
+                                    ul.suggestion-menu
+                                        li Алупка
+                                        li Бахчисарай
+                                        li Верхняя Кутузовка
+                                        li Гаспра
+                                        li Евпатория
+
+                        div.col-md-2
+                            fieldset
+                                input.input(id="passengers" readonly autocomplete="off")
+                                label(for="passengers" id="label-for-passengers") Пассажиры
+
+                                div.passengers-add
+                                    div.row
+                                        div.col-md-6.passengers-add__text Взрослые
+                                        div.col-md-6.row.passengers-add__actions
+                                            div.col-md-4
+                                                button.passengers-add__button#adult-minus(type="button") -
+                                            div.col-md-4#adult-number 0
+                                            div.col-md-4
+                                                button.passengers-add__button#adult-plus(type="button") +
+
+                                    div.row
+                                        div.col-md-6.passengers-add__text Дети
+                                        div.col-md-6.row.passengers-add__actions
+                                            div.col-md-4
+                                                button.passengers-add__button#children-minus(type="button") -
+                                            div.col-md-4#children-number 0
+                                            div.col-md-4
+                                                button.passengers-add__button#children-plus(type="button") +
+                                    input#adult-number-input(type="hidden" value="0")
+                                    input#children-number-input(type="hidden" value="0")
+
+                        div.col-md-2
+                            button Найти
+
+            img.main-img.main-img--1(src="assets/img/main-illustration.svg" alt="главная иллюстрация")
+            img.main-img.main-img--2(src="assets/img/main-illustration1.svg" alt="главная иллюстрация")
+            img.main-img.main-img--3(src="assets/img/main-illustration2.svg" alt="главная иллюстрация")

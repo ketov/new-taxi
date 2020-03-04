@@ -1,0 +1,75 @@
+.short-destinations{
+    &__message{
+        margin: -120px 0 0 0;
+        .col-md-10{
+            background: $green;
+            color: $white;
+            padding: 30px 48px 52px;
+            p{
+                font-size: 170%;
+                line-height: 145%;
+                margin: 17px 0 0;
+            }
+        }
+    }
+}
+
+@media(max-width: 1100px){
+    .short-destinations{
+        &__message{
+            margin: -128px 0 0 0;
+        }
+    }
+}
+
+@media(max-width: 900px){
+    .short-destinations{
+        &__message{
+            margin: -140px 0 0 0;
+            .col-md-10{
+                padding: 16px 40px 40px;
+                p{
+                    font-size: 150%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 850px){
+
+}
+
+@media(max-width: 767px){
+
+}
+
+@media(max-width: 650px){
+    .short-destinations{
+        &__message{
+            .col-md-10{
+                padding: 16px 30px 36px;
+                p{
+                    font-size: 130%;
+                    line-height: 145%;
+                    margin: 12px 0 0;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 400px){
+    .short-destinations{
+        &__message{
+            .col-md-10{
+                padding: 18px 28px 28px;
+                p{
+                    font-size: 115%;
+                    line-height: 135%;
+                    margin: 8px 0 0;
+                }
+            }
+        }
+    }
+}

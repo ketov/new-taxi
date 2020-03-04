@@ -1,0 +1,122 @@
+doctype html
+html
+    head
+        // Global site tag (gtag.js) - Google Analytics
+        script(async src="https://www.googletagmanager.com/gtag/js?id=UA-132117487-1")
+        script window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-132117487-1');
+
+        title Блог.Города
+        meta(name="description", content="")
+        meta(name="keywords", content="")
+        meta(charset="UTF-8") 
+        meta(name='viewport' content='width=device-width,initial-scale=1')
+        meta(content='true' name='HandheldFriendly')
+        meta(content='width' name='MobileOptimized')
+        meta(content='yes' name='apple-mobile-web-app-capable')
+        link(rel="stylesheet" type="text/css" href="assets/css/all.min.css")
+        link(ref="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon")
+        link(ref="icon" href="assets/img/favicon.ico" type="image/x-icon")
+
+    body
+        include includes/header-inner
+        section.search.search--inner.search--blog.search--pattern
+            div.container
+                ul.search__breadcrumbs(itemscope="" itemtype="http://schema.org/BreadcrumbList")
+                    li(itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement" class="route-item")
+                        a(href="#" itemprop="item")
+                            span(itemprop="name") Главная
+                            meta(itemprop="position" content="1")
+                    li
+                        span.splash /
+                    li(itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement" class="route-item")
+                        a(href="#" itemprop="item")
+                            span(itemprop="name") Как добраться из аэропорта до отеля
+                            meta(itemprop="position" content="2")
+                    li.clear
+
+
+            h1 Как добраться из&nbsp;аэропорта до&nbsp;отеля. Самый полный гид по&nbsp;транспорту за&nbsp;границей.
+
+        section.blog.blog--cities
+            div.container
+                div.row.letter
+                    div.col-md-1
+                        span.letter-container
+                            span.letter-sign А
+                    div.col-md-11
+                        div.city
+                            img(src="assets/img/blog-city-1.png" alt="Амстердам")
+                            div.text
+                                h3 Амстердам
+                                div.country Нидерланды
+                                p 
+                                    | Прочитайте о&nbsp;популярных маршрутах из&nbsp;нидерландского аэропорта 
+                                    | Схипхол и&nbsp;самого Амстердама. Цены, время в&nbsp;пути, остановки 
+                                    | и&nbsp;расписание транспорта в&nbsp;Аэрогидах по&nbsp;Амстердаму.
+                                a(href="#") Читать далее
+                            div.clear
+
+                        div.city
+                            img(src="assets/img/blog-city-2.png" alt="Анапа")
+                            div.text
+                                h3 Анапа
+                                div.country Россия
+                                p 
+                                    | Чтобы добраться из&nbsp;аэропорта Анапы до&nbsp;центра города и&nbsp;других курортов: 
+                                    | Геленджика, Сочи, Джемете и других, — изучите цены на&nbsp;маршрутах, 
+                                    | время в&nbsp;пути и&nbsp;пересадки в&nbsp;Аэрогидах Кивитакси.
+                                a(href="#") Читать далее
+                            div.clear
+
+                div.row.letter
+                    div.col-md-1
+                        span.letter-container
+                            span.letter-sign Б
+                    div.col-md-11
+                        div.city
+                            img(src="assets/img/blog-city-3.png" alt="Баку")
+                            div.text
+                                h3 Баку
+                                div.country Азербайджан
+                                p 
+                                    | Из&nbsp;аэропорта Баку до&nbsp;столицы или&nbsp;других городов Азербайджана 
+                                    | туристы могут добраться на&nbsp;городских автобусах, шаттлах 
+                                    | или на&nbsp;такси. Цены и&nbsp;расписание транспорта вы можете 
+                                    | уточнить в&nbsp;наших Аэрогидах.
+                                a(href="#") Читать далее
+                            div.clear
+
+                div.row.letter
+                    div.col-md-1
+                        span.letter-container
+                            span.letter-sign В
+                    div.col-md-11
+                        div.city
+                            img(src="assets/img/blog-city-4.png" alt="Варна")
+                            div.text
+                                h3 Варна
+                                div.country Болгария
+                                p 
+                                    | Как добраться из&nbsp;аэропорта Варны до&nbsp;центра курорта 
+                                    | и&nbsp;других городов Болгарии? На&nbsp;общественном транспорте 
+                                    | или&nbsp;такси (трансфере). Сравнить время в&nbsp;пути и&nbsp;цены 
+                                    | на&nbsp;билеты можно в&nbsp;нашем Аэрогиде по&nbsp;Варне.
+                                a(href="#") Читать далее
+                            div.clear
+
+        include includes/footer
+       
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+        script(src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js")
+        script(src="assets/js/app.min.js")
+
+        // BEGIN JIVOSITE CODE {literal}
+        script (function(){ var widget_id = 'mEb3UbRg1A';var d=document;var w=window;function l(){var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+        // {/literal} END JIVOSITE CODE
+
+        // Yandex.Metrika counter
+        script (function (m, e, t, r, i, k, a) {m[i] = m[i] || function () {(m[i].a = m[i].a || []).push(arguments)}; m[i].l=1 * new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(51847976, "init", {id:51847976, clickmap:true, trackLinks:true, accurateTrackBounce:true});
+        noscript
+            div
+                img(src="https://mc.yandex.ru/watch/51847976" style="position:absolute; left:-9999px;" alt="")
+        // /Yandex.Metrika counter

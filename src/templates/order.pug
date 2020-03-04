@@ -1,0 +1,286 @@
+doctype html
+html
+    head
+        // Global site tag (gtag.js) - Google Analytics
+        script(async src="https://www.googletagmanager.com/gtag/js?id=UA-132117487-1")
+        script window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-132117487-1');
+
+        title Заказ такси
+        meta(name="description", content="")
+        meta(name="keywords", content="")
+        meta(charset="UTF-8") 
+        meta(name='viewport' content='width=device-width,initial-scale=1')
+        meta(content='true' name='HandheldFriendly')
+        meta(content='width' name='MobileOptimized')
+        meta(content='yes' name='apple-mobile-web-app-capable')
+        link(rel="stylesheet" type="text/css" href="assets/css/all.min.css")
+        link(ref="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon")
+        link(ref="icon" href="assets/img/favicon.ico" type="image/x-icon")
+
+    body
+        include includes/header-inner
+
+        section.search.search--inner.search--order
+            div.container
+                ul.search__breadcrumbs(itemscope="" itemtype="http://schema.org/BreadcrumbList")
+                    li(itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement" class="route-item")
+                        a(href="#" itemprop="item")
+                            span(itemprop="name") Главная
+                            meta(itemprop="position" content="1")
+                    li
+                        span.splash /
+                    li(itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement" class="route-item")
+                        a(href="#" itemprop="item")
+                            span(itemprop="name") Такси из Ялты
+                            meta(itemprop="position" content="2")
+                    li
+                        span.splash /
+                    li(itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement" class="route-item")
+                        a(href="#" itemprop="item")
+                            span(itemprop="name") Такси из Ялты в аэропорт Симферополя
+                            meta(itemprop="position" content="3")
+                    li.clear
+
+
+        section.order(ng-app="myApp")
+            div.container
+                div.row
+                    div.col-md-6.offset-1.order__back
+                        a(href="#") ← Вернуться к выбору тарифа
+
+            h2 Заказ такси
+            div.container
+                div.row
+                    form.col-md-6.offset-1
+                        div.row
+                            div.col-md-12
+                                h3 Информация о&nbsp;трансфере
+                                fieldset
+                                    input.input.error(id="from" name="from" ng-model="from")
+                                    div.input-error Это обязательное поле
+                                    label(for="from") 
+                                        | Место отправления 
+                                        span#label-from-hide (адрес или название отеля)
+
+                        div.row
+                            div.col-md-6
+                                fieldset
+                                    input.input.error(id="date" name="date" ng-model="date")
+                                    div.input-error Это обязательное поле
+                                    label(for="date") Дата
+                            div.col-md-6
+                                fieldset
+                                    input.input(id="time" name="time" ng-model="time")
+                                    label(for="time") Время
+                                div.order-comment Укажите точное время прилёта, как&nbspв&nbspбилете, если заказ из&nbsp;аэропорта
+
+                        div.row
+                            div.col-md-12
+                                fieldset.select
+                                    div.comment Ваш часовой пояс
+                                    img.tick(src="assets/img/select-triangle.svg" alt="")
+                                    select(name="timezone")
+                                        option Калининград (MSK-1)
+                                        option(selected) Москва (MSK)
+                                        option Самара (MSK+1)
+                                        option Екатеринбург (MSK+2)
+                                        option Омск (MSK+3)
+                                        option Красноярск (MSK+4)
+                                        option Иркутск (MSK+5)
+                                        option Якутск (MSK+6)
+                                        option Владивосток (MSK+7)
+                                        option Магадан (MSK+8)
+                                        option Камчатка (MSK+9)
+                                div.order-comment Чтобы мы знали, во сколько вам можно звонить
+
+                        div.row
+                            div.col-md-6
+                                fieldset.select
+                                    div.comment Взрослые пассажиры
+                                    img.tick(src="assets/img/select-triangle.svg" alt="")
+                                    select.passengers-select(name="adult-passengers")
+                                        option(selected) 1
+                                        option 2
+                                        option 3
+                                        option 4
+                                        option 5
+
+                            div.col-md-6
+                                fieldset.select
+                                    div.comment Дети
+                                    img.tick(src="assets/img/select-triangle.svg" alt="")
+                                    select.passengers-select(name="child-passengers")
+                                        option(selected) 0
+                                        option 1
+                                        option 2
+                                        option 3
+                                        option 4
+                                        option 5
+
+                        div.row.k-radio
+                            fieldset.checkbox
+                                label(for="child-seats-and-boosters-block" data-block="#children-seat-row") Детские кресла и бустеры
+                                input(type="checkbox" id="child-seats-and-boosters-block")
+
+                        div.row#children-seat-row
+                            div.col-md-6
+                                fieldset.select
+                                    div.comment Кресло
+                                    img.tick(src="assets/img/select-triangle.svg" alt="")
+                                    select#chair-select(name="chair" onchange="var n = this.value; $('#chair-result').text('Детское кресло × ' + n + ' — ' + 200*n + ' руб.'); $('#chair-result').attr('data-summ', 200*n); var r = (n*200+parseInt($('#booster-result').attr('data-summ'))+parseInt($('#order-summ').attr('data-start'))); $('#order-summ').text(Math.round(r/50)*50);")
+                                        option(selected) 0
+                                        option 1
+                                        option 2
+                                        option 3
+                                div.order-comment +200 руб.
+
+                            div.col-md-6
+                                fieldset.select
+                                    div.comment Бустеры
+                                    img.tick(src="assets/img/select-triangle.svg" alt="")
+                                    select#booster-select(name="chair" onchange="var n = this.value; $('#booster-result').text('Бустер × ' + n + ' — ' + 200*n + ' руб.'); $('#booster-result').attr('data-summ', 200*n); var r = (n*200+parseInt($('#chair-result').attr('data-summ'))+parseInt($('#order-summ').attr('data-start'))); $('#order-summ').text(Math.round(r/50)*50);")
+                                        option(selected) 0
+                                        option 1
+                                        option 2
+                                        option 3
+                                div.order-comment +200 руб.
+
+
+                        div.row.k-radio.k-radio--back
+                            fieldset.checkbox
+                                label(for="back" data-block="#back-row") Обратный трансфер
+                                input(type="checkbox" id="back")
+
+                        div.row#back-row
+                            div.col-md-6
+                                fieldset
+                                    input.input(id="date-back" name="date-back" ng-model="dateBack")
+                                    label(for="date-back") Дата
+                            div.col-md-6
+                                fieldset
+                                    input.input(id="time-back" name="time-back" ng-model="timeBack")
+                                    label(for="time-back") Время
+
+
+                        div.row
+                            div.col-md-12
+                                h4 Контактные данные
+                            div.col-md-12
+                                fieldset
+                                    input.input(id="name" name="name" ng-model="name")
+                                    label(for="name") Имя и фамилия
+
+                        div.row
+                            div.col-md-12
+                                fieldset
+                                    input.input(id="email" name="email" ng-model="email")
+                                    label(for="email") Эл. почта
+
+                        div.row
+                            div.col-md-12
+                                fieldset
+                                    input.input(id="phone" name="phone")
+                                    label(for="phone") Номер телефона
+
+                        div.row
+                            div.col-md-12.row#use-code
+                                div.col-md-6
+                                    fieldset
+                                        input.input(id="promocode" name="promocode" onkeyup="")
+                                        label(for="promocode") Промокод
+                                div.col-md-6
+                                    button(type="button") Применить промокод
+
+
+                        div.row
+                            div.col-md-12
+                                h4.order__additional-services-h4 Дополнительные товары и&nbsp;услуги
+
+                            div.row.k-radio
+                                fieldset.checkbox
+                                    label(for="meet") Встреча в аэропорту с табличкой (+200 руб.)
+                                    input(type="checkbox" id="meet" onchange="$('#meet-result').text('Встреча в аэропорту — 200 руб.'); if ($(this).is(':checked')){var r = (200+parseInt($('#chair-result').attr('data-summ'))+parseInt($('#order-summ').attr('data-start'))+parseInt($('#booster-result').attr('data-summ'))); $('#order-summ').text(Math.round(r/50)*50); $('#order-summ').attr('data-start', parseInt($('#order-summ').attr('data-start'))+200);} else{$('#meet-result').text(''); var r = (parseInt($('#order-summ').attr('data-start'))-200 + parseInt($('#booster-result').attr('data-summ')) + parseInt($('#chair-result').attr('data-summ'))); $('#order-summ').text(Math.round(r/50)*50); $('#order-summ').attr('data-start', parseInt($('#order-summ').attr('data-start'))-200);}")
+
+
+                        div.row.last-row
+                            div.col-md-12
+                                div.order__continue.row
+                                    div.col-md-6
+                                        input.show#i-agree(type="checkbox")
+                                        div.i-agree-block
+                                            label(for="i-agree") Я согласен с условиями
+                                            a(href="#") Политики конфиденциальности
+                                    div.col-md-6
+                                        button#order-continue.not-agree Продолжить
+                                        div.input-error#need-agree Необходимо согласие с условиями политики конфиденциальности
+
+
+                    div.col-md-4#order__result-container
+                        div.order__result#order__result
+                            div.row
+                                div.col-md-6
+                                    div.order__result-row
+                                        div.order__result-header Тариф
+                                        div.order__result-text «Эконом»
+                                div.col-md-6
+                                    div.order__result-row
+                                        div.order__result-header Пассажиры
+                                        div.order__result-text#passengers-result 1
+
+                            div.row
+                                div.col-md-6
+                                    div.order__result-row
+                                        div.order__result-header Место отправления
+                                        div.order__result-text.order__result-text--from {{ from }} {{ date }} {{ time }}
+                                div.col-md-6
+                                    div.order__result-row
+                                        div.order__result-header Обратный трансфер
+                                        div.order__result-text.order__result-text
+                                            span.order__result-date {{dateBack}}
+                                            span {{ timeBack}}
+
+                            div.row
+                                div.col-md-12
+                                    div.order__result-row
+                                        div.order__result-header Контактная информация
+                                        div.order__result-text.order__result-text--name {{name}}
+                                        div.order__result-text.order__result-text--email {{email}}
+
+                            div.row
+                                div.col-md-12
+                                    div.order__result-row
+                                        div.order__result-header Дополнительные товары и услуги
+                                        div.order__result-text#chair-result(data-summ="0")
+                                        div.order__result-text#booster-result(data-summ="0")
+                                        div.order__result-text#meet-result
+
+
+                            div.order__in-total.row
+                                div.col-md-4.order__in-total-span1 Итого
+                                div.col-md-8.order__in-total-span2
+                                    div
+                                        span#order-summ(data-start="4620") 4620
+                                        span.rub руб.
+                                    div#one-way
+                                        span.span-1 стоимость трансфера в&nbsp;один конец
+                                        span.span-2 с учётом скидки
+
+
+        include includes/footer
+       
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+        script(src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js")
+        script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js")
+        script(src="assets/js/app.min.js")
+        script var app = angular.module('myApp', []);
+
+        // BEGIN JIVOSITE CODE {literal}
+        script (function(){ var widget_id = 'mEb3UbRg1A';var d=document;var w=window;function l(){var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+        // {/literal} END JIVOSITE CODE
+
+        // Yandex.Metrika counter
+        script (function (m, e, t, r, i, k, a) {m[i] = m[i] || function () {(m[i].a = m[i].a || []).push(arguments)}; m[i].l=1 * new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(51847976, "init", {id:51847976, clickmap:true, trackLinks:true, accurateTrackBounce:true});
+        noscript
+            div
+                img(src="https://mc.yandex.ru/watch/51847976" style="position:absolute; left:-9999px;" alt="")
+        // /Yandex.Metrika counter

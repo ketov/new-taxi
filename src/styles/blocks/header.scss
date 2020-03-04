@@ -1,0 +1,309 @@
+header{
+    background: $white;
+    padding: 20px 0 20px 0;
+    position: fixed;
+    height: auto;
+    transition: 0.5s ease;
+    width: 100%;
+    z-index: 3;
+    .logo-link{
+        border-bottom: none;
+        display: block;
+        float: left;
+        margin-left: 0;
+        &:hover{
+            background-size: 0 0;
+        }
+    }
+    .row{
+        position: relative;
+    }
+    a{
+        color: $black;
+        margin: 0 1.7%;
+    }
+    .link{
+        position: relative;
+        top: 15px;
+    }
+    .col-md-10{
+        font-size: 115%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .phone{
+        padding-top: 7px;
+        padding-right: 0;
+        text-align: right;
+        a{
+            border-bottom: none;
+            color: $black;
+            font-family: $CB;
+            font-size: 140%;
+            margin: 0;
+            &:hover{
+                background-size: 0 0;
+            }
+        }
+        .free8800{
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    .row.mobile{
+        display: none;
+        .links{
+            display: none;
+        }
+        .phone{
+            display: none;
+            .free8800{
+                position: relative;
+                right: auto;
+            }
+        }
+        .link{
+            display: block;
+            font-size: 165%;
+            margin: 24px 0 0 0;
+            &:first-child{
+                margin: 0;
+            }
+        }
+        .phone{
+            text-align: center;
+            a{
+                font-size: 360%;
+            }
+            .free8800{
+                font-size: 120%;
+            }
+        }
+        .col-md-2{
+            padding: 0;
+        }
+    }
+}
+
+header.inner{
+    padding: 4px 0 4px 0;
+}
+header.inner.active{
+    padding: 4px 0 4px 0;
+}
+
+header.active{
+    padding: 4px 0 4px 0;
+    .links{
+        display: block;
+    }
+    .phone{
+        display: block;
+    }
+}
+
+#hamburger{
+    display: none;
+    cursor: pointer;
+    padding: 26px 16px 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    &:hover .hamburger__block{
+        background: $green;
+    }
+}
+
+#hamburger.active{
+    .hamburger{
+        &__block{
+            background: $black;
+            &--1{
+                top: 6px;
+                transform: rotate(45deg);
+            }
+            &--2{
+                opacity: 0;
+            }
+            &--3{
+                top: 6px;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+
+.hamburger{
+    &__container{
+        height: 16px;
+        position: relative;
+        width: 24px;
+    }
+
+    &__block{
+        background: $black;
+        height: 2px;
+        opacity: 1;
+        position: absolute;
+        right: 0;
+        width: 24px;
+        transform: rotate(0deg);
+        transition: 0.35s ease;
+        &--1{
+            top: 0;
+        }
+        &--2{
+            top: 7px;
+        }
+        &--3{
+            top: 14px;
+        }
+    }
+}
+
+
+
+
+
+
+@media(max-width: 1300px){
+    header{
+        padding: 4px 0;
+        .phone{
+            font-size: 85%;
+            padding-top: 9px;
+            .free8800{
+                font-size: 95%;
+            }
+        }
+    }
+}
+
+@media(max-width: 1200px){
+    header{
+        a{
+            font-size: 90%;
+            margin: 0 1.5%;
+        }
+        .phone{
+            a{
+                font-size: 130%;
+            }
+        }
+    }
+}
+
+@media(max-width: 1100px){
+    header{
+        .col-md-10{
+            -ms-flex: 0 0 70.0%;
+            flex: 0 0 70.0%;
+            max-width: 70.0%;
+        }
+        .col-md-2{
+            -ms-flex: 0 0 30.0%;
+            flex: 0 0 30.0%;
+            max-width: 30.0%;
+        }
+        .link{
+            float: left;
+        }
+        a{
+            margin: 0 1.9%;
+        }
+    }
+}
+
+@media(max-width: 850px){
+    header{
+        .row{
+            display: none;
+        }
+        .row.mobile{
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            .links, .phone{
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            .link{
+                display: table;
+                float: none;
+                margin: 0 auto 16px;
+                &:first-child{
+                    display: table;
+                    margin: 0 auto 16px;
+                }
+            }
+        }
+    }
+
+    #hamburger{
+        display: block;
+    }
+
+
+    header.hamburger-active{
+        height: 100%;
+        overflow-y: auto;
+        padding-bottom: 28px;
+        .phone{
+            padding-top: 0;
+        }
+    }
+}
+
+@media(max-width: 850px){
+
+}
+
+@media(max-width: 767px){
+
+}
+
+@media(max-width: 600px){
+    header{
+        .row.mobile{
+            .link{
+                font-size: 145%;
+            }
+            .phone a{
+                font-size: 300%;
+            }
+        }
+    }
+}
+
+@media(max-width: 450px){
+    header{
+        .row.mobile{
+            .link{
+                font-size: 125%;
+            }
+            .phone a{
+                font-size: 200%;
+            }
+        }
+    }
+}
+
+@media(max-width: 300px){
+    header{
+        .row.mobile{
+            .link{
+                font-size: 110%;
+                margin: 0 auto 10px;
+                &:first-child{
+                    margin: 12px auto 10px;
+                }
+            }
+            .phone a{
+                font-size: 150%;
+            }
+        }
+    }
+}

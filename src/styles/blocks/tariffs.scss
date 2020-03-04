@@ -1,0 +1,212 @@
+.search{
+    .tariffs{
+        &__form{
+            padding: 0;
+        }
+    }
+}
+
+.tariffs{
+    h3{
+        margin: 40px 0 22px;
+        text-align: center;
+    }
+    .row{
+        justify-content: space-around;
+    }
+    &__tariff{
+        background: $white;
+        color: $black;
+        padding: 26px 24px 24px;
+        position: relative;
+        text-align: center;
+        .i{
+            cursor: pointer;
+            padding: 12px;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .comment{
+            background: $white;
+            box-shadow: rgba(210,214,217,.5) 0 0 28px 0;
+            display: none;
+            font-size: 100%;
+            left: 50%;
+            margin-left: -37px;
+            opacity: 0;
+            padding: 11px 19px;
+            position: absolute;
+            top: 24px;
+            transition: 0.5s ease;
+            width: 234px;
+            z-index: 1;
+        }
+        .comment.active{
+            display: block;
+            opacity: 1;
+            top: 36px;
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+        .name{
+            font-size: 125%;
+            margin: 6px 0 0 0;
+        }
+        .model{
+            font-size: 85%;
+        }
+        .price{
+            font-family: $CB;
+            font-size: 170%;
+            position: relative;
+        }
+        .rub{
+            font-size: 80%;
+            margin: 0 0 0 5px;
+        }
+        .button{
+            font-size: 65%;
+            margin: 3px 0 0 0;
+            padding: 8px 0 4px;
+            width: 100%;
+        }
+    }
+    &__tariff.inactive a{
+        background: $light-gray;
+        cursor: pointer;
+        pointer-events: none;
+    }
+    &__tariff.inactive button{
+        background: $light-gray;
+        cursor: pointer;
+        pointer-events: none;
+    }
+    &__tariff-container{
+        &:last-child{
+            .comment{
+                margin-left: -148px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1350px){
+    .tariffs{
+        .col-md-2{
+            -ms-flex: 0 0 33.33%;
+            flex: 0 0 33.33%;
+            margin-bottom: 15px;
+            max-width: 33.33%;
+        }
+        &__tariff-container{
+            &:last-child{
+                .comment{
+                    margin-left: -37px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1300px){
+    .tariffs{
+        &__tariff-container{
+            .comment{
+                left: auto;
+                margin-left: -76px;
+                right: 0;
+                top: -68px;
+            }
+            &:last-child{
+                .comment{
+                    left: auto;
+                    margin-left: -76px;
+                    right: 0;
+                    top: -68px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 900px){
+    .tariffs{
+        .col-md-2{
+            padding-right: 15px;
+            &:nth-child(3n){
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+@media(max-width: 1000px){
+
+}
+
+@media(max-width: 850px){
+
+}
+
+@media(max-width: 767px){
+
+}
+
+@media(max-width: 700px){
+    .tariffs{
+        .col-md-2{
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            margin-bottom: 15px;
+            max-width: 50%;
+            &:nth-child(2n){
+                padding-right: 0;
+                .tariffs__tariff{
+                    .comment{
+                        /*margin-left: -124px;*/
+                    }
+                }
+            }
+            &:nth-child(2n+1){
+                padding-right: 15px;
+                .tariffs__tariff{
+                    .comment{
+                        /*margin-left: -21px;*/
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 500px){
+    .tariffs{
+        .col-md-2{
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            margin-bottom: 15px;
+            max-width: 100%;
+            .comment{
+            }
+            &:nth-child(2n){
+                padding-right: 0;
+                .tariffs__tariff{
+                    .comment{
+                        /*margin-left: -21px;*/
+                    }
+                }
+            }
+            &:nth-child(2n+1){
+                padding-right: 0;
+                .tariffs__tariff{
+                    .comment{
+                        /*margin-left: -21px;*/
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,113 @@
+doctype html
+html
+    head
+        // Global site tag (gtag.js) - Google Analytics
+        script(async src="https://www.googletagmanager.com/gtag/js?id=UA-132117487-1")
+        script window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-132117487-1');
+
+        title Отзывы
+        meta(name="description", content="")
+        meta(name="keywords", content="")
+        meta(charset="UTF-8")
+        meta(name='viewport' content='width=device-width,initial-scale=1')
+        meta(content='true' name='HandheldFriendly')
+        meta(content='width' name='MobileOptimized')
+        meta(content='yes' name='apple-mobile-web-app-capable')
+        link(rel="stylesheet" type="text/css" href="assets/css/all.min.css")
+        link(ref="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon")
+        link(ref="icon" href="assets/img/favicon.ico" type="image/x-icon")
+
+    body
+        include includes/header-inner
+
+        section.search.search--inner.search--order
+            div.container
+                ul.search__breadcrumbs(itemscope="" itemtype="http://schema.org/BreadcrumbList")
+                    li(itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement" class="route-item")
+                        a(href="#" itemprop="item")
+                            span(itemprop="name") Главная
+                            meta(itemprop="position" content="1")
+                    li
+                        span.splash /
+                    li(itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement" class="route-item")
+                        a(href="#" itemprop="item")
+                            span(itemprop="name") Отзывы
+                            meta(itemprop="position" content="2")
+                    li.clear
+
+        div.reviews-page
+            include includes/reviews
+        div.container
+            div.row
+                div.col-md-6.offset-3.reviews-form-container
+                    form.reviews-form
+                        span.h3 Оставить отзыв
+
+                        fieldset.first
+                            input.input(id="name" name="name")
+                            label(for="name") ФИО
+
+                        fieldset
+                            input.input(id="email" name="email")
+                            label(for="email") Эл. почта
+
+                        fieldset
+                            input.input(id="phone" name="phone")
+                            label(for="phone") Телефон
+
+                        fieldset#message-fieldset
+                            textarea.input(id="message" name="message")
+                            label(for="message") Сообщение
+
+                        div.row
+                            div.col-md-6
+                                fieldset#radio-block
+                                    input(type="radio" name="rating" value="5" id="rating-5")
+                                    label(for="rating-5" class="rating-label")
+                                        img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                        img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+
+                                    input(type="radio" name="rating" value="4" id="rating-4")
+                                    label(for="rating-4" class="rating-label")
+                                        img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                        img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+
+                                    input(type="radio" name="rating" value="3" id="rating-3")
+                                    label(for="rating-3" class="rating-label")
+                                        img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                        img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+
+                                    input(type="radio" name="rating" value="2" id="rating-2")
+                                    label(for="rating-2" class="rating-label")
+                                        img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                        img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+
+                                    input(type="radio" name="rating" value="1" id="rating-1")
+                                    label(for="rating-1" class="rating-label")
+                                        img.star.star--gray(src="assets/img/star-gray.svg" alt="звезда рейтинга")
+                                        img.star.star--yellow(src="assets/img/star-yellow.svg" alt="звезда рейтинга")
+
+                                    div.clear
+                                div.clear
+
+                            div.col-md-6
+                                button Отправить
+
+
+
+        include includes/footer
+
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+        script(src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js")
+        script(src="assets/js/app.min.js")
+
+        // BEGIN JIVOSITE CODE {literal}
+        script (function(){ var widget_id = 'mEb3UbRg1A';var d=document;var w=window;function l(){var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+        // {/literal} END JIVOSITE CODE
+
+        // Yandex.Metrika counter
+        script (function (m, e, t, r, i, k, a) {m[i] = m[i] || function () {(m[i].a = m[i].a || []).push(arguments)}; m[i].l=1 * new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(51847976, "init", {id:51847976, clickmap:true, trackLinks:true, accurateTrackBounce:true});
+        noscript
+            div
+                img(src="https://mc.yandex.ru/watch/51847976" style="position:absolute; left:-9999px;" alt="")
+        // /Yandex.Metrika counter

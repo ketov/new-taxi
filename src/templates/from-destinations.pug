@@ -1,0 +1,248 @@
+doctype html
+html
+    head
+        // Global site tag (gtag.js) - Google Analytics
+        script(async src="https://www.googletagmanager.com/gtag/js?id=UA-132117487-1")
+        script window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-132117487-1');
+
+
+        title Откуда
+        meta(name="description", content="")
+        meta(name="keywords", content="")
+        meta(charset="UTF-8") 
+        meta(name='viewport' content='width=device-width,initial-scale=1')
+        meta(content='true' name='HandheldFriendly')
+        meta(content='width' name='MobileOptimized')
+        meta(content='yes' name='apple-mobile-web-app-capable')
+        link(rel="stylesheet" type="text/css" href="assets/css/all.min.css")
+        link(ref="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon")
+        link(ref="icon" href="assets/img/favicon.ico" type="image/x-icon")
+
+    body
+        include includes/header-inner
+
+        section.search.search--inner.search--pattern
+            div.container
+                ul.search__breadcrumbs(itemscope="" itemtype="http://schema.org/BreadcrumbList")
+                    li(itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement" class="route-item")
+                        a(href="#" itemprop="item")
+                            span(itemprop="name") Главная
+                            meta(itemprop="position" content="1")
+                    li
+                        span.splash /
+                    li(itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement" class="route-item")
+                        a(href="#" itemprop="item")
+                            span(itemprop="name") Такси из&nbsp;аэропорта Симферополя
+                            meta(itemprop="position" content="2")
+                    li.clear
+
+
+            h1 Такси-трансфер из&nbsp;аэропорта Симферополя
+            div.container
+                div.row
+                    form.col-md-10.offset-1
+                        div.row
+                            div.col-md-4
+                                fieldset
+                                    fieldset
+                                        input.input.focus.with-hidden(name="from" id="from" value="Симферополь" autocomplete="off")
+                                        label(for="from") Откуда
+                                        ul.suggestion-menu
+                                            li Алупка
+                                            li Бахчисарай
+                                            li Верхняя Кутузовка
+                                            li Гаспра
+                                            li Евпатория
+
+                            div.col-md-4
+                                fieldset
+                                    fieldset
+                                        input.input.with-hidden(name="where" id="where" autocomplete="off")
+                                        label(for="where") Куда
+                                        ul.suggestion-menu
+                                            li Алупка
+                                            li Бахчисарай
+                                            li Верхняя Кутузовка
+                                            li Гаспра
+                                            li Евпатория
+
+                            div.col-md-2
+                                fieldset
+                                    input.input(id="passengers" readonly autocomplete="off")
+                                    label(for="passengers" id="label-for-passengers") Пассажиры
+
+                                    div.passengers-add
+                                        div.row
+                                            div.col-md-6.passengers-add__text Взрослые
+                                            div.col-md-6.row.passengers-add__actions
+                                                div.col-md-4
+                                                    button.passengers-add__button#adult-minus(type="button") -
+                                                div.col-md-4#adult-number 0
+                                                div.col-md-4
+                                                    button.passengers-add__button#adult-plus(type="button") +
+
+                                        div.row
+                                            div.col-md-6.passengers-add__text Дети
+                                            div.col-md-6.row.passengers-add__actions
+                                                div.col-md-4
+                                                    button.passengers-add__button#children-minus(type="button") -
+                                                div.col-md-4#children-number 0
+                                                div.col-md-4
+                                                    button.passengers-add__button#children-plus(type="button") +
+                                        input#adult-number-input(type="hidden" value="0")
+                                        input#children-number-input(type="hidden" value="0")
+
+                            div.col-md-2
+                                button Найти
+
+
+
+        include includes/reviews
+        include includes/advantages
+
+        section.destinations
+            h2.h2-80 Все направления из&nbsp;аэропорта Симферополя
+            div.container
+                div.row
+                    div.col-md-6
+                        div.destinations__destination
+                            a.link(href="#") Симферополь — Алупка
+                            span.price 1 500 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a.link(href="#") Симферополь — Бахчисарай
+                            span.price 1 190 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a.link(href="#") Симферополь — Белогорск
+                            span.price 990 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a.link(href="#") Симферополь — Верхняя Кутузовка
+                            span.price 890 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a.link(href="#") Симферополь — Гаспра
+                            span.price 1 490 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a.link(href="#") Симферополь — Гурзуф
+                            span.price 1 090 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a.link(href="#") Симферополь — Джанкой
+                            span.price 1 190 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a.link(href="#") Симферополь — Заозерное
+                            span.price 1 190 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a.link(href="#") Симферополь — Евпатория
+                            span.price 1 090 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a.link(href="#") Симферополь — Инкерман
+                            span.price 1 090 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a.link(href="#") Симферополь — Казачья бухта
+                            span.price 1 190 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a.link(href="#") Симферополь — Керчь
+                            span.price 3 890 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a.link(href="#") Симферополь — Нижняя Кутузовка
+                            span.price 990 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a.link(href="#") Симферополь — Новый Свет
+                            span.price 1 690 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a.link(href="#") Симферополь — Орловка
+                            span.price 1 690 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a.link(href="#") Симферополь — Полюшко
+                            span.price 1 090 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a.link(href="#") Симферополь — Приморский
+                            span.price 1 890 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a.link(href="#") Симферополь — Рыбачье
+                            span.price 1 590 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a.link(href="#") Симферополь — Севастополь
+                            span.price 1 090 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a.link(href="#") Симферополь — Уютное
+                            span.price 990 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a.link(href="#") Симферополь — Скалистое
+                            span.price 690 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a.link(href="#") Симферополь — Судак
+                            span.price 1 490 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a.link(href="#") Симферополь — Щелкино
+                            span.price 2 090 руб.
+
+                    div.col-md-6
+                        div.destinations__destination
+                            a.link(href="#") Симферополь — Ялта
+                            span.price 1 090 руб.
+
+
+
+                div.row
+                    a.button(href="#") Весь список
+
+
+        include includes/footer
+       
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+        script(src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js")
+        script(src="assets/js/app.min.js")
+
+        // BEGIN JIVOSITE CODE {literal}
+        script (function(){ var widget_id = 'mEb3UbRg1A';var d=document;var w=window;function l(){var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+        // {/literal} END JIVOSITE CODE
+
+        // Yandex.Metrika counter
+        script (function (m, e, t, r, i, k, a) {m[i] = m[i] || function () {(m[i].a = m[i].a || []).push(arguments)}; m[i].l=1 * new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(51847976, "init", {id:51847976, clickmap:true, trackLinks:true, accurateTrackBounce:true});
+        noscript
+            div
+                img(src="https://mc.yandex.ru/watch/51847976" style="position:absolute; left:-9999px;" alt="")
+        // /Yandex.Metrika counter

@@ -1,0 +1,47 @@
+
+// Bootstrap
+//@import "_bootstrap.scss";
+
+// Owl-carousel
+//@import "../../bower_components/owl.carousel/dist/assets/owl.carousel.css";
+
+@import '_variables.scss';
+
+// Элементы(кнопки, формы и т. д.)
+//@import '_elements.scss';
+
+// Страницы
+//@import 'pages/projects.scss';
+
+// Библиотеки
+@import 'libs/bootstrap.scss';
+@import 'libs/animate.min.scss';
+@import 'libs/swiper.min.scss';
+
+@import '_main.scss';
+
+// Блоки
+@import 'blocks/404.scss';
+@import 'blocks/about-company.scss';
+@import 'blocks/advantages.scss';
+@import 'blocks/all-pages.scss';
+@import 'blocks/blog.scss';
+@import 'blocks/cities.scss';
+@import 'blocks/contacts.scss';
+@import 'blocks/destinations.scss';
+@import 'blocks/footer.scss';
+@import 'blocks/header.scss';
+@import 'blocks/how-to-order.scss';
+@import 'blocks/index-offer.scss';
+@import 'blocks/not-found.scss';
+@import 'blocks/order.scss';
+@import 'blocks/question-answer.scss';
+@import 'blocks/reviews.scss';
+@import 'blocks/rules.scss';
+@import 'blocks/search.scss';
+@import 'blocks/seo.scss';
+@import 'blocks/short-destinations.scss';
+@import 'blocks/slider.scss';
+@import 'blocks/standards.scss';
+@import 'blocks/tariffs.scss';
+@import 'blocks/thankyou.scss';
